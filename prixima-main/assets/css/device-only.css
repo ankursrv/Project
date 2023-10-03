@@ -1,0 +1,5 @@
+@media screen and (max-width:768){
+    .workSlideWrapper .swiper-slide img{
+        height: inherit;
+    }
+}

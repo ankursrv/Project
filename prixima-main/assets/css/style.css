@@ -1,0 +1,384 @@
+/*  1. button 
+    2. Anchor Tag
+    3. Heading 
+    Top Navbar
+    Bottom Navbar
+    Hero banner
+    Abotu Section
+    Company Review Section
+    Services Section
+    Work Section
+    Team SEction
+    Testimonial Section
+    Blog Section
+    Footer Section 
+*/
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+/* Custom Css start  */
+:root{
+--bg-color1:#ff4d29;
+--text-color1:#092032;
+--hover-color:#d64022;
+--text-color2: #d64022;
+--primary-font: 'Barlow', sans-serif;
+--shadow:0px 6px 30px rgba(0, 0, 0, 0.08);
+}
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.shadow-1{
+    box-shadow: var(--shadow);
+}
+/* Custom Css end  */
+
+/*1. button */
+.btn:focus{
+    box-shadow: none;
+}
+.brndBtn{
+    background: var(--bg-color1);
+    padding: 8px 25px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: all 0.5s;
+}
+.brndBtn:hover{
+    background: #d64022;
+    color: #ffffff;
+}
+/*2. Anchor Tag  */
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s;
+}
+a:hover{
+    color: inherit;
+    
+}
+/* 3. Heading  */
+h1,h2,h3,h4,h5{
+    font-weight: 700;
+    color: var(--text-color1);
+}
+h6{
+    font-weight: 400;
+}
+body{
+    font-family: var(--primary-font);
+    line-height: 1.7;
+    color: #516171;
+}
+
+/* Top Navbar  */
+.topNavbar{
+    background: var(--bg-color1);
+    display: flex;
+    align-items: center;
+}
+.left a, .right a{
+    color: #ffffff;
+}
+.left a i{
+    margin-right: 6px;
+    font-size: 14px;
+}
+.left a{
+    margin-right: 20px;
+    font-size: 16px;
+}
+.right a i{
+    font-size: 14px;
+    margin-right: 3px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+}
+.right a:hover i{
+    background: #ffffff;
+    color: var(--bg-color1);
+    transition: all 0.5s;
+}
+/* Navbar bottom */
+#navbar_top{
+    transition: ease-in-out 0.3s;
+}
+.navbarBottom .navbar-brand {
+    color: rgb(0 0 0 / 90%);
+    font-weight: 700;
+    font-size: 28px;
+}
+.textColor1{
+    color: var(--bg-color1);
+}
+.navbarBottom .navbar-nav .nav-item .nav-link{
+    color: var(--text-color1);
+    font-weight: 600;
+    padding-right: 10px;
+}
+.navbarBottom .navbar-nav .nav-item .nav-link:hover, .navbarBottom .navbar-nav .nav-item .active{
+    color: var(--hover-color);
+}
+.fixed-top{
+    
+    top: -40px;
+    transform: translateY(40px);
+}
+
+/* Hero Banner  */
+.slide-1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../img/bg_banner1.jpg');
+}
+   
+.slide-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../img/bg_banner2.jpg');
+}
+.slider{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heroBanner h1{
+    font-weight: 700;
+}
+.bannerBtn-1{
+    background: #ff4d29;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 8px 25px;
+    border-color: #ff4d29;
+}
+.bannerBtn-1:hover{
+background: var(--hover-color);
+color: #ffffff;
+}
+.bannerBtn-2{
+    border-color: #ffffff;
+    padding: 8px 20px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.bannerBtn-2:hover{
+    background: #ffffff;
+}
+.swiper-button-prev{
+    left: 40px;
+}
+.swiper-button-next{
+    right: 40px;
+    background-color: #ff4d29;
+    
+}
+.swiper-button-next::before{
+    content: 'next';
+    position: absolute;
+    top: 0;
+}
+/* Abotu Section  */
+.entro .entroSecWrap .entroImg img{
+    width: 160px;
+}
+
+/* Review section  */
+.companyReview{
+    background-image: linear-gradient(rgba(255, 77, 41, 0.8),rgba(255, 77, 41,0.8)),url('../img/bg_banner1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Services Section */
+/**** Note: Services Section / Work Section Repeate Component Start  ****/
+.serviceTitle h6{
+color: var(--bg-color1);
+}
+.serviceTitle p{
+    max-width: 500px;
+    margin: 0 auto;
+}
+/*** Note: Services Section / Work Section Repeate Component End  ****/
+/* Services Card */
+.servicesCard .card{
+box-shadow: var(--shadow);
+}
+.servicesCard .imgBox img{
+    width: 90px;
+}
+
+/* Work SEction  */
+.gradientColor{
+    position: absolute;
+    background-image: linear-gradient(180deg, rgba(255, 76, 41, 0) 0%, var(--text-color1) 100%);
+    width: 100%;
+    height: 220px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* height: 100%; */
+}
+.workSlideWrapper .card-body{
+    position: absolute;
+    bottom: 0;
+}
+.workSlideWrapper .card-body p span{
+    display: inline-block;
+    background: var(--bg-color1);
+    width: 25px;
+    height: 2px;
+    margin-right: 10px;
+}
+.workSlideWrapper .swiper-slide img{
+    width: 100%;
+    height: 440px;
+    object-fit: fill;
+}
+.swiper-pagination{
+    position: inherit;
+    margin-top: 20px;
+}
+.swiper-pagination-bullet{
+    margin: 0 7px !important;
+    padding: 5px;
+   background-color: #807979;
+} 
+.swiper-pagination-bullet-active{
+    background-color: var(--bg-color1);
+}
+.swiper-pagination-bullet:hover{
+    opacity: 1;
+    background: #869791;
+}
+
+/* Team SEction */
+.temInfoWrap{
+    position: relative;
+    overflow: hidden;
+}
+.infoOverlay{
+    position: absolute;
+    background: rgba(255, 77, 41, 0.7);
+    width: 100%;
+    height: 100%;
+    top: -10%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.temInfoWrap:hover .infoOverlay{
+    opacity: 1;
+    top: 0;
+}
+.socialIcon a i{
+    width: 45px;
+    height: 45px;
+}
+.socialIcon{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    z-index: 1;
+    align-items: center;
+  transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+    
+.temInfoWrap:hover .socialIcon{
+    opacity: 1;
+    top: 50%;
+}
+
+/* Testimonial Section */
+.bgGradiantImage{
+    background-image: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)),url('../img/bg_banner1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.testimonialWraper .imgBox img{
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimonialWraper{
+    position: relative;
+}
+.quatation{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
+    opacity: 0.5;
+    z-index: -1;
+}
+.testimonialWraper .title small{
+    color: #ff4d29;
+}
+.testimonialWraper .testiDiscription p{
+    max-width: 700px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 30px auto 20px auto
+}
+.testimonialWraper .reviewStar i{
+    color: #d64022;
+}
+
+/* Blog Section */
+.blogItemWrapper{
+    position: relative;
+}
+.ovrelayBtn a{
+    background: var(--bg-color1);
+    padding: 6px 15px;
+    color: white;
+    font-weight: 500;
+    border-radius: 20px;
+}
+.ovrelayBtn{
+    position: absolute;
+    top: 22px;
+    left: 22px;
+}
+.blogItemBottom p:first-child{
+    text-decoration: underline;
+    color: #ff4d29;
+}
+
+/* Footer SEction  */
+.footerSocialIcon a{
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.251);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.footerSocialIcon a:hover{
+    background-color: #ffffff;
+    color: var(--bg-color1);
+}
+footer p{
+    color: #c3c7cb;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.251);;
+}
+
+
