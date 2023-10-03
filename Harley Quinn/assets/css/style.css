@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-main: 'Bai Jamjuree', sans-serif;
+    --color-text-1: #303050;    /*nav-link & heading color using*/
+    --color-text-body: #636383;
+    --color-brand: #f83691;
+    --color-hover: #000000e6;
+}
+
+/* Common CSS Start  */
+body {
+    color: var(--color-text-body);
+    line-height: 1.7;
+    font-family: var(--font-main);
+}
+
+a {
+    color: var(--color-text-1);
+    transition: all 0.5s;
+    text-decoration: none;
+}
+.paragraphWidth{
+    max-width: 600px;
+}
+.lh-paragraph {
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-main);
+    font-weight: 700;
+    color: var(--color-text-1);
+}
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+@media screen and (min-width:768px) {
+    .pt-md-6{
+        padding-top:3rem;
+    }
+    }
+
+@media screen and (min-width:992px) {
+.pt-lg-6{
+    padding-top:5rem!important;
+}
+}
+   
+.text-color-brand{
+    color: var(--color-brand);
+}
+.btn:focus{
+    box-shadow: none;
+}
+.btn:hover{
+    color: var(--color-brand);
+    background-color: transparent;
+}
+.brand-btn{
+    font-size: 18px;
+    padding: 15px 30px;
+    background: var(--color-brand);
+    display: inline;
+    color: white;
+    font-weight: 500;
+    border: 2px solid var(--color-brand);
+    transition: all 0.5s;
+    border-radius: 0;
+}
+.social-icon{
+    background-color: var(--color-brand);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    border: 2px solid var(--color-brand);
+    color: white;
+}
+/* Common CSS End  */
+
+
+/* Header SEction Start  */
+.myNavbar .navbar-brand {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--color-text-1);
+}
+
+.myNavbar .navbar-brand:hover {
+    color: var(--color-hover);
+}
+
+.myNavbar .navbar-nav .nav-item .nav-link {
+    color: var(--color-text-1);
+    font-weight: 700;
+    font-size: 17px;
+    padding: 0 15px;
+}
+
+.myNavbar .navbar-nav .nav-item .active,
+.myNavbar .navbar-nav .nav-item .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.myNavbar .navSocial-icon .social-icon:hover {
+    background-color: transparent;
+    color: var(--color-brand);
+}
+
+.myNavbar .nav-social-icon i {
+    color: white;
+}
+
+.myNavbar .nav-social-icon a:hover i {
+    color: var(--color-brand);
+}
+
+.myNavbar{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: all 0.5s;
+}
+.myNavbar.scrolled {
+    background-color: white!important;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/* Header SEction End  */
+
+/* Banner SEction Start  */
+.banner {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.display-1 {
+    font-weight: 700;
+}
+.banner .hero-text span {
+    color: var(--color-brand);
+}
+
+/* Banner SEction End  */
+
+
+/* Service Section Start  */
+.vertical-line::after{
+    content: '';
+    width: 2px;
+    height: 100px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -6%;
+}
+.line{
+    width: 65px;
+    height: 2px;
+    background: var(--color-brand);
+    margin-top: 20px;
+}
+.services-sec .icon-box{
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-brand);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.services-sec .icon-box i{
+    color: white;
+    font-size: 20px;
+}
+/* Read More  */
+.services-sec .card-btn i, .blog-sec .card-btn i{
+    background-color: var(--color-brand);
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+.services-sec .card-btn:hover h6, .blog-sec .card-btn:hover h6{
+    color: var(--color-brand);
+    
+}
+.services-sec .card-btn:hover i, .blog-sec .card-btn:hover i{
+    transform: translateX(5px);
+}
+
+/* Service Section End  */
+
+
+/* Work section Start  */
+.img-wrap{
+    position: relative;
+    overflow: hidden;
+}
+.img-wrap .content{
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: #f83691;
+top: 100%;
+left: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.4s;
+}
+
+.img-wrap:hover .content{
+    top: 0;
+}
+.img-wrap .content a{
+    font-size: 16px;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 18px;
+    font-weight: 500;
+}
+.img-wrap .content a:hover{
+    background-color: white;
+    color: var(--color-text-1);
+}
+/* Work Section End  */
+
+/* Client Section Start  */
+.brand{
+    margin-top: -1px;
+    margin-left: -1px;
+}
+/* Client Section End  */
+
+/* Education Section Start */
+.education-sec{
+    position: relative;
+}
+.education-sec::after{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: var(--color-brand);
+    top: 0;
+    left: -8px;
+}
+.education-sec{
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: var(--color-brand);
+}
+/* Education Section End */
+
+/* Contact SEction Start  */
+#contact-form .form-control{
+padding: 8px 10px;
+border-radius: 0;
+}
+#contact-form .form-control:focus{
+    box-shadow: none;
+    border: 1px solid var(--color-brand);
+}
+/* Contact Section End  */
+
+/* Footer SEction Start  */
+footer{
+    background-color: var(--color-text-1);
+}
+.footer-social-icon .social-icon:hover{
+    color: var(--color-brand);
+    background-color: transparent;
+}
+.footer .quick-link{
+    color: rgba(255,255,255, 0.7);
+}
+.footer .quick-link:hover{
+    color: var(--color-brand);
+}
+.footer .footer-contact p{
+    color: rgba(255,255,255, 0.7);
+    margin-bottom: 5px;
+}
+.border-top{
+    border-top: 1px solid #dee2e61c!important;
+}
+.footer-bottom span{
+    color: var(--color-brand);
+}
+    
+/* Footer Section End  */
