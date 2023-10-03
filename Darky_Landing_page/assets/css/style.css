@@ -1,0 +1,328 @@
+/*? Wow Js
+
+*/
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{
+    font-family: 'Manrope', sans-serif;
+}
+/* Custom CSS Start  ********************/
+
+:root{
+    
+}
+
+.bgColor1{
+    background-color: #121212;
+}
+.bgColor2{
+    background-color: #1c1c1c;
+}
+.txt-clr-primary{color: #2a9fd6;}
+
+/* a{text-decoration: none;} */
+
+a:hover{
+    transition: all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+.btn:focus{box-shadow: none;}
+.btn{border-radius: 0;}
+.btnPrimary{
+    color: white;
+    padding: 10px 20px;
+    background: #2a9fd6;
+    transition: all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+.section-padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+    
+.btnPrimary:hover{
+    background-color: #2487b6 !important;
+    color: white;
+}
+    
+.btnScondary{
+    color: white;
+    padding: 10px 20px;
+    background-color: #555;
+    transition: all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+.btnScondary:hover{
+    background: #484848;
+    color: white;
+}
+/* Border  */
+.borderCustom{
+    border: 1px solid #dee2e645;
+}
+.borderTop{
+border-top: 1px solid #dee2e645 !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: white;
+}
+.text-muted{
+    color: #c3c5c8!important;
+}
+.fs-7{
+    font-size: 17px;
+}
+/* Custom CSS End      ******************************/
+
+/* Start Header Section */
+.navbar{
+    padding: 15px 0;
+    border-bottom: 1px solid #dee2e645;
+}
+.navbar-brand{
+    color: #2a9fd6;
+    font-size: 30px;
+    text-decoration: underline;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    color: #ffffff8c;
+    padding: 0px 20px;
+}
+.navbar .navbar-nav .nav-item .active{
+    color: white;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+    color: white;
+}
+.navbar .navbar-nav .nav-item .nav-link:first-child{
+    padding-left: 0;
+}
+/* Hamburger List Icon  */
+.navbar-toggler:focus{
+    box-shadow: unset;
+}
+/* End Header Section */
+
+/* Start Hero Section */
+#hero{
+    padding-top: 170px;
+}
+/* End Hero Section */
+
+/* Start Service Section */
+#service .serviceCard{
+    border: 1px solid #776e6e;
+    transition: all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+#service .iconBox{
+    width: 60px;
+    height: 60px;
+    background: #555252;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+#service .serviceCard a:hover{
+color: #3e7cd8;
+}
+#service .serviceCard:hover {
+    border-color: #2a9fd6;
+    border-radius: 8px;
+}
+#service .serviceCard:hover .iconBox{
+    background-color: #2487b6;
+}
+/* End Service Section */
+
+/* Start Work Section */
+#work .slideBox{
+    border: 1px solid #dee2e645;
+    transition: all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+    
+#work .overlay{
+    /* background-color: lightcoral; */
+    position: absolute;
+    bottom: -25px;
+    padding: 0px 0px 0 10px;
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition:all 0.5s;
+    overflow: hidden;
+}
+#work .slideBox:hover .overlay{
+    bottom: 0px;
+    opacity: 1;
+}
+#work .slideBox:hover{
+    border-color: #2a9fd6;
+}
+#work .swiper-pagination,
+#review .swiper-pagination          /*Review same slyling */
+{
+    position: relative;
+    margin-top: 30px;
+}
+#work .swiper-pagination-bullet,
+#review .swiper-pagination-bullet       /*Review same slyling */
+{
+    background-color: #afafafed;
+}
+#work .swiper-pagination-bullet-active
+,#review .swiper-pagination-bullet-active       /*Review same slyling */
+{
+    background-color: white;
+}
+/* End Work Section */
+
+/* Start Review Section */
+#review .reviewCard{
+    border: 1px solid #dee2e645;
+    transition: all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+#review .imgBox{
+    width: 100px;
+}
+#review .reviewCard:hover{
+    border-color:#2487b6;
+}
+/* End Review Section */
+    
+/* Start Team Section */
+#team .teamCard, #team .teamCard .social-icon{
+    border: 1px solid #dee2e645;
+    transition: all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+#team .team-info h6{
+    font-size: 14px;
+}
+#team .teamCard .social-icon a{
+    text-decoration: none;
+    padding-left: 25px;
+}
+#team .teamCard .social-icon a:first-child{
+    padding-left: 0;
+}
+#team .teamCard .social-icon a i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dee2e645;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+#team .teamCard:hover{
+    border-color: #2487b6;
+}
+#team .teamCard .social-icon a i:hover{
+    background-color: #2487b6;
+}
+/* End Team Section */
+
+/* Start Blog Section */
+#blog .blogCard{
+    border: 1px solid #dee2e645;
+}
+#blog .blogCard small{
+background-color: #2a9fd6;
+padding: 5px;
+font-size: 12px;
+color: white;
+font-weight: 600;
+letter-spacing: 1px;
+}
+/* End Blog Section */
+
+/* Start Contact Section */
+#contact .iconBox{
+    width: 65px;
+    height: 65px;
+    background: #555;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact .mainBox{
+    border: 1px solid #dee2e645;
+    padding: 25px 10px 40px 25px;
+    transition: all 0.5s ;
+    -webkit-transition: all 0.5s ;
+}
+#contact .mainBox:hover{
+    border-color: #2487b6;
+}
+#contact .formWrap{
+    border: 1px solid #dee2e645;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+#contact .formWrap:hover{
+    border-color: #2a9fd6;
+}
+#contact .mainBox:nth-child(2),
+#contact .mainBox:nth-child(3)
+{
+    border-top-width: 0;
+}
+#contact .mainBox:nth-child(2):hover,
+#contact .mainBox:nth-child(3):hover{
+border-top-width: 1px;
+}
+#contact .form-label{
+    color: #c3c5c8;
+}
+#contact .form-control{
+    background: transparent;
+    border-radius: unset;
+    padding: 10px 15px;
+    border-color: #dee2e645;
+    color: white;
+}
+#contact textarea{
+    resize: none;
+}
+#contact .form-control:focus{
+    box-shadow: none;
+    border-color: #2487b6;
+}
+/* Follow Us Card  */
+.followBtn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* End Contact Section */
+
+/* Start Footer Section  */
+#footer .footer-sec2 ul li a, #footer .footer-sec3 ul li a{
+    color: #c3c5c8;
+}
+.footer-sec1:hover, .footer-sec2:hover, .footer-sec3:hover{
+    border-color: #2a9fd6;
+}
+#footer .footer-sec2 ul li a:hover, #footer .footer-sec3 ul li a:hover{
+    color: #2a9fd6;
+}
+.footer-bottom span{
+    color: #2a9fd6;
+}
+.footer-bottom:hover{
+    border-color: #2a9fd6;
+}
