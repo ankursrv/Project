@@ -1,0 +1,129 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+/* Common Css Start  */
+:root{
+    --header-top-color:#262626;
+    --nav-text-color:#334155;
+}
+a{text-decoration: none;}
+/* Common CSS End  */
+
+/* Header Start  */
+.top_header_wrap{
+    background-color: var(--header-top-color);
+    padding: 15px 20px;
+}
+.Top_header_buy_now_btn{
+    background-color: #82b440;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px 18px;
+    box-shadow: 0 2px 0 #6f9a37;
+    font-weight: 600;
+}
+#top_header .header_right .badge{
+  font-size: 10px;
+}
+.mynavbar .navbar-nav .nav-item .nav-link{
+    color: var(--nav-text-color);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 18px;
+}
+.mynavbar .dropdown .column p{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--nav-text-color);
+}
+/* Mega Menu Start  */
+.dropdown {
+    float: left;
+    overflow: hidden;
+    position: inherit;
+  }
+  .dropdown .dropbtn {
+    color: var(--nav-text-color);
+    font-weight: 600; 
+    border: none;
+    outline: none;
+    padding: 10px 20px; 
+    background-color: inherit;
+  }
+   
+    
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top:100%;
+   transition: ease-in-out 1s;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+    
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .column ul{
+    padding-left: 0px;
+  }
+  .mynavbar .dropdown .column ul li{
+    list-style: none;
+  }
+  .mynavbar .dropdown .column ul li a {
+    color: #4e4e4ede;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 0px 0px 12px 0px;
+    text-decoration: none;
+    display: block;
+  }
+   
+.mynavbar .dropdown .column ul li a:hover{
+    color: rgba(0, 0, 0, 0.788);
+  }
+.mega-menu-img{
+background-image: url(../assets/images/megamenuimg.png);
+background-repeat: no-repeat;
+background-size: 40%;
+background-position: 105%;
+ }
+.megamenubgimg{
+    background: rgb(190 216 231 / 49%);
+    padding: 35px 35px 0px 25px;
+    border-radius: 20px;
+}
+.megamenubgimg a{
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    color: #6b6565;
+    text-decoration: none;
+ }  
+ .mynavbar .explore-submenu .explore-submenu-item{
+  list-style: none;
+  display: none;
+}
+.mynavbar .explore-submenu:hover .explore-submenu-item{
+  display: block;
+}
+
+.mynavbar .explore-submenu .explore-submenu-item li a{
+  color: #4e4e4ede;
+  font-weight: 600;
+  font-size: 15px;
+}
+/* Mega Menu End  */
+  
+ 
+  
+ 
+   
+   
+
+  
+/* Header End  */
