@@ -1,0 +1,225 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+/*! Smooth Scrollbr it's necessary to set the width or height  Start */
+#my-scrollbar{
+    width: 100%;
+    height: 100vh;
+}
+/*! End  */
+:root{
+--primary-font:'Montserrat', sans-serif;
+--color1:#c52222;
+--btn-hover:#ab2626;
+--text-color1:#7a7a7acf;
+--text-color2: #c6bfbfcf;
+--border-color: #555151;
+}
+/*************** CUStom CSS Start  ************/
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+}
+.btn:focus{box-shadow: none; border: none;}
+.btn{
+    border: none;
+}
+.btn:active{
+    background-color: unset;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.btnPrimary{
+    padding: 8px 25px;
+    background-color: #c52222;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btnPrimary:hover{
+    background-color: var(--btn-hover);
+    color: white;
+}
+.sectionPadding{
+    padding: 120px 0;
+}
+.fs-6{
+    font-size: 14px !important;
+}
+
+/*************** CUStom CSS END  ************/
+
+
+/* Header Start  **************/
+.navbar .nav-item .nav-link{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color1);
+}
+.navbar .nav-item .nav-link:hover, .navbar .nav-item .active{
+    color: var(--color1);
+}
+
+/* Header End  ****************/
+
+/* Hero Start  **************/
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('../images/cover.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    
+}
+
+.hero h1{
+    font-weight: 600;
+}
+.hero p{
+    max-width: 600px;
+    font-weight: 500;
+    margin: 0 auto 25px auto;
+}
+
+.hero .input-group{
+    background-color: rgb(255 255 255 / 11%);
+    padding: 10px 10px;
+    border-radius: 4px;
+}
+.hero .input-group input{
+    background-color: transparent;
+    border: none;
+    padding: 10px 10px;
+    color: white;
+    font-size: 18px;
+}
+.hero .input-group input:focus{
+    box-shadow: none;
+}
+
+.input-group>:not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-radius: 4px; 
+}
+/* Hero End  **************/
+
+/* Service Start  **************/
+.service span{
+    position: relative;
+}
+.service span::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: var(--color1);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+.service .icon{
+    background-color: var(--color1);
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    color: white;
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.service .cardWrap{
+    transition: all 0.5s ease;
+}
+.service .cardWrap:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, 25%);
+    transform: translateY(-4px);
+}
+.service a{
+    font-size: 14px;
+    font-weight: 700;
+}
+.service a:hover{
+    color: var(--btn-hover);
+}
+/* Service END  **************/
+
+/* OTher Start  **************/
+.other{
+    height: 200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url('../images/cover2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* OTher END  **************/
+
+/* Portfolio Start  **************/
+.portfolio .imgWrap{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+    
+.portfolio .imgWrap .hoverBtn{
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.portfolio .imgWrap img{
+    transition: all 0.5s ease;
+}
+.portfolio .imgWrap:hover img{
+    transform: scale(1.1); 
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+.portfolio .imgWrap:hover .hoverBtn{
+    opacity: 1;
+}
+/* Portfolio End  **************/
+
+/* Customers Start  **************/
+.customers{
+    /* height: 500px; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url('/assets/images/cover3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* Slider  */
+.customers .iconBox{
+    color: #e49e1c;
+}
+.customers .swiper-slide{
+    /* width: 500px !important; */
+    border: 1px solid white;
+}
+.customers .cardSlideWrap{
+    border: 1px solid var(--border-color);
+}
+.customers .cardSlideWrap .title p{
+    color: var(--text-color2);
+    font-size: 14px;
+}
+.customers .cardSlideWrap img{
+    border-radius: 50px;
+    border: 2px solid var(--color1);
+    width: 75px;
+}
+.customers .cardSlideWrap small{
+    color: var(--text-color2);
+}
+.customers .cardSlideWrap span{
+    color: #ab2626;
+    /* font-weight: bold; */
+}
+.customers .swiper-pagination {
+    position: inherit;
+    margin-top: 20px;
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--color1);
+}
