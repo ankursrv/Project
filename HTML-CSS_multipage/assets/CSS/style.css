@@ -1680,6 +1680,7 @@ input:focus {
 .mb-menu {
   position: absolute;
   right: 20px;
+  z-index: 500;
 }
 
 #mbmenu:checked ~ .mb-menu #mbMenuOpen {
