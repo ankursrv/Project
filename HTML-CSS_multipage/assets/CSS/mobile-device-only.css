@@ -406,6 +406,9 @@
   .mt-sm-2 {
     margin-top: 2rem;
   }
+  .header-bottom .menu > ul {
+    width: 100%;
+  }
   .header-bott-btn {
     display: none;
   }
