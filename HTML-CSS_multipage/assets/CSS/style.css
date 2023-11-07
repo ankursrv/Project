@@ -1798,6 +1798,7 @@ input:focus {
   overflow: visible;
   border-radius: 0;
   background: #f6f6f6;
+  width: 100%;
 }
 
 .bar-title {
