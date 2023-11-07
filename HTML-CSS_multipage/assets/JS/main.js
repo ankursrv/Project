@@ -48,7 +48,7 @@ var swiper = new Swiper(".case_studies_slider", {
   },
   breakpoints: {
     769: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 30,
     },
   },
@@ -58,7 +58,7 @@ var swiper = new Swiper(".case_studies_slider", {
 var swiper = new Swiper(".happy-cus-slid", {
   slidesPerView: 1,
   spaceBetween: 30,
-  // autoplay: true,
+  autoplay: true,
   speed: 1000,
   loop: true,
   pagination: {

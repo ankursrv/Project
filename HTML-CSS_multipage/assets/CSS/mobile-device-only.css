@@ -148,13 +148,13 @@
   }
   .header-bottom .menu > ul {
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     z-index: 400;
     background: rgb(218, 216, 216);
     left: 0;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 55%;
     justify-content: start;
     padding: 2rem;
     height: 100%;

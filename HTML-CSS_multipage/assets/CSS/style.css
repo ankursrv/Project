@@ -1085,7 +1085,7 @@ input:focus {
 
 /* Amazing Team  */
 .amazing__team {
-  background-image: url("/assets/img/pattern.webp"),
+  background-image: url("../img/pattern.webp"),
     linear-gradient(to right, #03136b, #0d1e7f, #162993, #1c35a8, #2241be);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1094,7 +1094,7 @@ input:focus {
 .amazing__team::before {
   content: "";
   position: absolute;
-  background: url(/assets/img/shape-top.webp);
+  background: url("../img/shape-top.webp");
   top: 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1107,7 +1107,7 @@ input:focus {
 .amazing__team::after {
   content: "";
   position: absolute;
-  background: url(/assets/img/shape-bottom.webp);
+  background: url("../img/shape-bottom.webp");
   bottom: 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1494,7 +1494,7 @@ input:focus {
   width: 100%;
 }
 #footer {
-  background: url(/assets/img/shape.webp);
+  background: url("../img/shape.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center left;
