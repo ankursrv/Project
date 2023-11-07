@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce_HTML_CSS</title>
+
+    <!-- Google Font  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Montserrat:wght@400;500;600;700&family=Ruda:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Ruda:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper CSS file  -->
+    <link rel="stylesheet" href="assets/CSS/swiper-Css-bundle.min.css">
+
+    <script src="https://kit.fontawesome.com/feb5c435a0.js" crossorigin="anonymous"></script>
+    <!-- CSS File  -->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/mobile-device-only.css">
+</head>
+
+<body>
+<header id="clck-top">
+  <div class="header-top">
+    <div class="container">
+      <div class="row justify-content-space-between">
+        <div class="header-top-right">
+          <ul class="d-flex align-items-center">
+            <li class="faceb">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 50 50">
+                  <path fill="" d="M26 20v-3c0-1.3.3-2 2.4-2H31v-5h-4c-5 0-7 3.3-7 7v3h-4v5h4v15h6V25h4.4l.6-5h-5z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="twitt">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 50 50">
+                  <path fill="" d="M39.2 16.8c-1.1.5-2.2.8-3.5 1c1.2-.8 2.2-1.9 2.7-3.3c-1.2.7-2.5 1.2-3.8 1.5c-1.1-1.2-2.7-1.9-4.4-1.9c-3.3 0-6.1 2.7-6.1 6.1c0 .5.1.9.2 1.4c-5-.2-9.5-2.7-12.5-6.3c-.5.7-.8 1.7-.8 2.8c0 2.1 1.1 4 2.7 5c-1 0-1.9-.3-2.7-.8v.1c0 2.9 2.1 5.4 4.9 5.9c-.5.1-1 .2-1.6.2c-.4 0-.8 0-1.1-.1c.8 2.4 3 4.2 5.7 4.2c-2.1 1.6-4.7 2.6-7.5 2.6c-.5 0-1 0-1.4-.1c2.4 1.9 5.6 2.9 9 2.9c11.1 0 17.2-9.2 17.2-17.2V20c1.2-.9 2.2-1.9 3-3.2z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="skkpe">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 50 50">
+                  <path fill="" d="M38 27.3c.1-.8.2-1.6.2-2.4c0-1.8-.3-3.5-1-5.1c-.7-1.6-1.6-3-2.8-4.2c-1.2-1.2-2.6-2.2-4.2-2.8c-1.6-.7-3.4-1-5.1-1c-.8 0-1.7.1-2.5.2c-1.1-.6-2.4-.9-3.7-.9c-2.1 0-4.1.8-5.5 2.3c-1.5 1.5-2.3 3.4-2.3 5.5c0 1.3.3 2.6 1 3.8c-.1.7-.2 1.5-.2 2.3c0 1.8.3 3.5 1 5.1c.7 1.6 1.6 3 2.8 4.2c1.2 1.2 2.6 2.2 4.2 2.8c1.6.7 3.4 1 5.1 1c.8 0 1.6-.1 2.3-.2c1.2.7 2.5 1 3.9 1c2.1 0 4.1-.8 5.5-2.3c1.5-1.5 2.3-3.4 2.3-5.5c0-1.3-.3-2.6-1-3.8zM25.1 33c-4.7 0-6.8-2.3-6.8-4c0-.9.7-1.5 1.6-1.5c2 0 1.5 2.9 5.2 2.9c1.9 0 3-1 3-2.1c0-.6-.3-1.4-1.6-1.7l-4.2-1c-3.4-.8-4-2.7-4-4.4c0-3.6 3.3-4.9 6.5-4.9c2.9 0 6.3 1.6 6.3 3.7c0 .9-.8 1.4-1.7 1.4c-1.7 0-1.4-2.4-4.9-2.4c-1.7 0-2.7.8-2.7 1.9c0 1.1 1.4 1.5 2.5 1.7l3.1.7c3.4.8 4.2 2.7 4.2 4.6c.1 2.9-2.1 5.1-6.5 5.1z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="lnked">
+              <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.3em" viewBox="0 0 32 32">
+                  <path fill="" d="M27.25 3.125h-22a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2v-22a2 2 0 0 0-2-2zM11.22 26.78h-4v-14h4v14zm-2-15.5c-1.384 0-2.5-1.118-2.5-2.5s1.116-2.5 2.5-2.5s2.5 1.12 2.5 2.5s-1.118 2.5-2.5 2.5zm16 15.5h-4v-8.5c0-.4-.404-1.054-.688-1.212c-.375-.21-1.26-.23-1.665-.034l-1.648.793v8.954h-4v-14h4v.615c1.582-.723 3.78-.652 5.27.184c1.58.885 2.73 2.863 2.73 4.7v8.5z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-top-title d-flex align-items-center text-gradian-color">
+          <h6>Let us grow your website traffic.</h6>
+        </div>
+        <div class="header-top-left d-flex text-white d-flex align-items-center">
+          <div class="contact">
+            <h5><a href="#" class="text-white">Cell: 0123456789</a></h5>
+          </div>
+          <div class="lang">
+            <input type="checkbox" id="check">
+            <label for="check">
+              <h5>English</h5>
+              <svg class="mennu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" d="m12 19.164l6.207-6.207l-1.414-1.414L12 16.336l-4.793-4.793l-1.414 1.414L12 19.164Zm0-5.65l6.207-6.207l-1.414-1.414L12 10.686L7.207 5.893L5.793 7.307L12 13.514Z"/>
+              </svg>
+            </label>
+            <div class="sub-lng" id="sub-lng">
+              <ul>
+                <li class="activee">English</li>
+                <li>Francias</li>
+                <li>Francias</li>
+                <li>English</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header bottom  -->
+  <div class="header-bottom" id="active-sticky">
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-space-between">
+        <div class="logo">
+          <a href="#" class="d-flex">
+          <img src="assets/img/logo.webp" alt="#">
+          </a>
+        </div>
+        <input type="checkbox" id="mbmenu">
+        <label for="mbmenu" class="mb-menu" id="icon">
+          <svg class="mm-icon" id="mbMenuOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="" d="M3 8h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/>
+          </svg>
+          <svg class="mm-icon" id="mbMenuClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path fill="" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"/>
+          </svg>
+        </label>
+        <div class="menu">
+          <ul class="d-flex">
+            <li class="mb-srch-box">
+              <form action="" class="news-form      position-relative">
+                <input type="text" class="sbuscribe mbinput-box" placeholder="Enter your search key ... ">
+                <button class="btn-sty-1 subs-btn">Search
+                </button>
+              </form>
+            </li>
+            <div class="mb--menu-wrap d-flex">
+              <li><a href="#">Home</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li id="blog">
+                <a href="#">Blog</a>
+                <input type="checkbox" id="subBlog">
+                <label for="subBlog">
+                  <svg id="plus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/>
+                  </svg>
+                  <svg id="subt-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <path fill="" d="M8 15h16v2H8z"/>
+                  </svg>
+                </label>
+                <div class="sub--list">
+                  <ul>
+                    <li>
+                      <a href="#">blog details</a>
+                    </li>
+                    <li>
+                      <a href="#">blog grid 3 column</a>
+                    </li>
+                    <li>
+                      <a href="#">blog grid 3 column</a>
+                    </li>
+                    <li>
+                      <a href="#">blog grid 3 column</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li id="pages">
+                <a href="#">Pages</a>
+                <input type="checkbox" id="subpages">
+                <label for="subpages" class="sbpage">
+                  <svg id="plus--icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/>
+                  </svg>
+                  <svg id="subt--icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <path fill="" d="M8 15h16v2H8z"/>
+                  </svg>
+                </label>
+                <div class="sub--list page-sb-list">
+                  <ul>
+                    <li>
+                      <a href="#">blog details</a>
+                    </li>
+                    <li>
+                      <a href="#">blog grid 3 column</a>
+                    </li>
+                    <li>
+                      <a href="#">blog grid 3 column</a>
+                    </li>
+                    <li>
+                      <a href="#">blog grid 3 column</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Contacts</a></li>
+              <div class="mb-menu-wrap-soc-ico">
+                <ul class="d-flex align-items-center">
+                  <li class="faceb">
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 50 50">
+                        <path fill="" d="M26 20v-3c0-1.3.3-2 2.4-2H31v-5h-4c-5 0-7 3.3-7 7v3h-4v5h4v15h6V25h4.4l.6-5h-5z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="twitt">
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 50 50">
+                        <path fill="" d="M39.2 16.8c-1.1.5-2.2.8-3.5 1c1.2-.8 2.2-1.9 2.7-3.3c-1.2.7-2.5 1.2-3.8 1.5c-1.1-1.2-2.7-1.9-4.4-1.9c-3.3 0-6.1 2.7-6.1 6.1c0 .5.1.9.2 1.4c-5-.2-9.5-2.7-12.5-6.3c-.5.7-.8 1.7-.8 2.8c0 2.1 1.1 4 2.7 5c-1 0-1.9-.3-2.7-.8v.1c0 2.9 2.1 5.4 4.9 5.9c-.5.1-1 .2-1.6.2c-.4 0-.8 0-1.1-.1c.8 2.4 3 4.2 5.7 4.2c-2.1 1.6-4.7 2.6-7.5 2.6c-.5 0-1 0-1.4-.1c2.4 1.9 5.6 2.9 9 2.9c11.1 0 17.2-9.2 17.2-17.2V20c1.2-.9 2.2-1.9 3-3.2z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="skkpe">
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 50 50">
+                        <path fill="" d="M38 27.3c.1-.8.2-1.6.2-2.4c0-1.8-.3-3.5-1-5.1c-.7-1.6-1.6-3-2.8-4.2c-1.2-1.2-2.6-2.2-4.2-2.8c-1.6-.7-3.4-1-5.1-1c-.8 0-1.7.1-2.5.2c-1.1-.6-2.4-.9-3.7-.9c-2.1 0-4.1.8-5.5 2.3c-1.5 1.5-2.3 3.4-2.3 5.5c0 1.3.3 2.6 1 3.8c-.1.7-.2 1.5-.2 2.3c0 1.8.3 3.5 1 5.1c.7 1.6 1.6 3 2.8 4.2c1.2 1.2 2.6 2.2 4.2 2.8c1.6.7 3.4 1 5.1 1c.8 0 1.6-.1 2.3-.2c1.2.7 2.5 1 3.9 1c2.1 0 4.1-.8 5.5-2.3c1.5-1.5 2.3-3.4 2.3-5.5c0-1.3-.3-2.6-1-3.8zM25.1 33c-4.7 0-6.8-2.3-6.8-4c0-.9.7-1.5 1.6-1.5c2 0 1.5 2.9 5.2 2.9c1.9 0 3-1 3-2.1c0-.6-.3-1.4-1.6-1.7l-4.2-1c-3.4-.8-4-2.7-4-4.4c0-3.6 3.3-4.9 6.5-4.9c2.9 0 6.3 1.6 6.3 3.7c0 .9-.8 1.4-1.7 1.4c-1.7 0-1.4-2.4-4.9-2.4c-1.7 0-2.7.8-2.7 1.9c0 1.1 1.4 1.5 2.5 1.7l3.1.7c3.4.8 4.2 2.7 4.2 4.6c.1 2.9-2.1 5.1-6.5 5.1z"/>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="lnked">
+                    <a href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.3em" viewBox="0 0 32 32">
+                        <path fill="" d="M27.25 3.125h-22a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2v-22a2 2 0 0 0-2-2zM11.22 26.78h-4v-14h4v14zm-2-15.5c-1.384 0-2.5-1.118-2.5-2.5s1.116-2.5 2.5-2.5s2.5 1.12 2.5 2.5s-1.118 2.5-2.5 2.5zm16 15.5h-4v-8.5c0-.4-.404-1.054-.688-1.212c-.375-.21-1.26-.23-1.665-.034l-1.648.793v8.954h-4v-14h4v.615c1.582-.723 3.78-.652 5.27.184c1.58.885 2.73 2.863 2.73 4.7v8.5z"/>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div class="header-bott-btn">
+          <button class="rbtn btn-sty-1">
+            <a href="#" class="text-white d-flex align-items-center">
+              Analyze Your Site
+              <span class="d-flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M13.293 7.293a.999.999 0 0 0 0 1.414L15.586 11H8a1 1 0 0 0 0 2h7.586l-2.293 2.293a.999.999 0 1 0 1.414 1.414L19.414 12l-4.707-4.707a.999.999 0 0 0-1.414 0z" />
+                </svg>
+              </span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Click top  -->
+  <div class="clik-top">
+    <a href="#clck-top" class="" role="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24">
+        <path fill="#fff" d="M14 20h-4v-9l-3.5 3.5l-2.42-2.42L12 4.16l7.92 7.92l-2.42 2.42L14 11v9Z"/>
+      </svg>
+    </a>
+  </div>
+</header>
+
+    <!-- Hero banner Start  -->
+    <section class="hero-banner">
+        <img src="assets/img/shape2.webp" alt="" class="shape2">
+        <img src="assets/img/shape1.webp" alt="" class="shape1">
+        <div class="container">
+            <div class="row d-flex justify-content-space-between align-items-center align-items-center-inherit flex-dir-column-lg-mb">
+                <div class="col-xl-5 left ">
+                    <h1>Top Ranking Your Brand New Website.</h1>
+                    <img src="assets/img/particle1.webp" alt="" class="l-img-1">
+                    <p class="text- center">Top rankings is important for online business.</p>
+                    <img src="assets/img/particle2.webp" alt="" class="l-img-2">
+                    <form action="">
+                        <input type="text" class="input-box" placeholder="https://yourwebsite.com">
+                        <button class="btn-sty-1">Free Audit Now</button>
+                    </form>
+                    <img src="assets/img/particle3.webp" alt="" class="l-img-3">
+                </div>
+                <div class="col-xl-7 right ">
+                    <div class="right-img">
+                        <img src="assets/img/1.webp" alt="" class="r-img-1">
+                        <img src="assets/img/3.webp" alt="" class="r-img-2">
+                        <img src="assets/img/2.webp" alt="" class="r-img-3">
+                        <img src="assets/img/mobile.webp" alt="" class="r-img-mobile img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Start  -->
+    <section class="brand section">
+            <div class="container">
+                <div class="brand-dis">
+                    <h4 class="text-center text-white">Trusted by <span class="text-gradian-color">8,980+</span> of The
+                        World's Best Organization.</h4>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <a href="#" class="box-1">
+                                        <img src="assets/img/4.webp" alt="" class="brnd-img-1">
+                                    </a>
+                                    <a href="#" class="box-2 text-center">
+                                        <img src="assets/img/5.1.webp" alt="" class="brnd-img-2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <a href="#" class="box-1">
+                                        <img src="assets/img/4.webp" alt="" class="brnd-img-1">
+                                    </a>
+                                    <a href="#" class="box-2 text-center">
+                                        <img src="assets/img/5.1.webp" alt="" class="brnd-img-2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <a href="#" class="box-1">
+                                        <img src="assets/img/brnd2.webp" alt="" class="brnd-img-1">
+                                    </a>
+                                    <a href="#" class="box-2 text-center">
+                                        <img src="assets/img/2.1.webp" alt="" class="brnd-img-2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <a href="#" class="box-1">
+                                        <img src="assets/img/3 (1).webp" alt="" class="brnd-img-1">
+                                    </a>
+                                    <a href="#" class="box-2 text-center">
+                                        <img src="assets/img/3.1.webp" alt="" class="brnd-img-2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <a href="#" class="box-1">
+                                        <img src="assets/img/4.webp" alt="" class="brnd-img-1">
+                                    </a>
+                                    <a href="#" class="box-2 text-center">
+                                        <img src="assets/img/5.1.webp" alt="" class="brnd-img-2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <a href="#" class="box-1">
+                                        <img src="assets/img/4.webp" alt="" class="brnd-img-1">
+                                    </a>
+                                    <a href="#" class="box-2 text-center">
+                                        <img src="assets/img/5.1.webp" alt="" class="brnd-img-2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <a href="#" class="box-1">
+                                        <img src="assets/img/brnd2.webp" alt="" class="brnd-img-1">
+                                    </a>
+                                    <a href="#" class="box-2 text-center">
+                                        <img src="assets/img/2.1.webp" alt="" class="brnd-img-2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <a href="#" class="box-1">
+                                        <img src="assets/img/3 (1).webp" alt="" class="brnd-img-1">
+                                    </a>
+                                    <a href="#" class="box-2 text-center">
+                                        <img src="assets/img/3.1.webp" alt="" class="brnd-img-2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <a href="#" class="box-1">
+                                        <img src="assets/img/4.webp" alt="" class="brnd-img-1">
+                                    </a>
+                                    <a href="#" class="box-2 text-center">
+                                        <img src="assets/img/5.1.webp" alt="" class="brnd-img-2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <a href="#" class="box-1">
+                                        <img src="assets/img/4.webp" alt="" class="brnd-img-1">
+                                    </a>
+                                    <a href="#" class="box-2 text-center">
+                                        <img src="assets/img/5.1.webp" alt="" class="brnd-img-2">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <!-- Offer Start  -->
+    <section class="offer section">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="img-box d-flex justify-content-center small-img-bgcolor">
+                                <img src="assets/img/sharing.webp" alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body-title d-flex align-items-center">
+                                <h2 class="position-relative dot">
+                                    What We Offer
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Offer Card  -->
+                <div class="row d-flex justify-content-space-between flex-dir-column-lg-mb gap-lg">
+                    <div class="col-lg-6 offer-card-inner">
+                        <div class="row d-flex offer-card-innerr flex-dir-column-lg-mb flex-dir-column-lg-mb">
+                            <div class="col-lg-5">
+                                <div class="img-box">
+                                    <img src="assets/img/marketing.webp" alt="" class="offer-img-1">
+                                </div>
+                                <img src="assets/img/line-one.webp" alt="" class="offer-img-2">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3>Marketing Automation</h3>
+                                        <p class="text-style-1">Lorem Ipsum is simply dummy text of the ipsum has been the
+                                            industry standard ever printer specimen book.</p>
+                                        <a href="#" role="btn">
+                                            <button type="button" class="offer-card-btn automation-btn1">Details +
+                                            </button>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offer-card-inner">
+                        <div class="row d-flex offer-card-innerr flex-dir-column-lg-mb flex-dir-column-lg-mb">
+                            <div class="col-lg-5">
+                                <div class="img-box">
+                                    <img src="assets/img/analytics.webp" alt="" class="offer-img-1">
+                                </div>
+                                <img src="assets/img/line-two.webp" alt="" class="offer-img-2">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3>SEO Consultancy</h3>
+                                        <p class="text-style-1">Lorem Ipsum is simply dummy text of the ipsum has been the
+                                            industry standard ever printer specimen book.</p>
+                                        <a href="#" role="btn">
+                                                <button type="button" class="offer-card-btn seo-btn">Details +
+                                                </button>
+                                            
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-space-between offer-card flex-dir-column-lg-mb gap-lg">
+                    <div class="col-lg-6 offer-card-inner">
+                        <div class="row d-flex offer-card-innerr flex-dir-column-lg-mb">
+                            <div class="col-lg-5">
+                                <div class="img-box">
+                                    <img src="assets/img/connect.webp" alt="" class="offer-img-1">
+                                </div>
+                                <img src="assets/img/line-three.webp" alt="" class="offer-img-2">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3>Pay Per Click Advertising</h3>
+                                        <p class="text-style-1">Lorem Ipsum is simply dummy text of the ipsum has been the
+                                            industry standard ever printer specimen book.</p>
+                                        <a href="#" role="btn">
+                                            <button type="button" class="offer-card-btn payper-btn">Details +
+                                            </button>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offer-card-inner">
+                        <div class="row d-flex offer-card-innerr flex-dir-column-lg-mb">
+                            <div class="col-lg-5">
+                                <div class="img-box">
+                                    <img src="assets/img/document.webp" alt="" class="offer-img-1">
+                                </div>
+                                <img src="assets/img/line-foure.webp" alt="" class="offer-img-2">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h3>Marketing Automation</h3>
+                                        <p class="text-style-1">Lorem Ipsum is simply dummy text of the ipsum has been the
+                                            industry standard ever printer specimen book.</p>
+                                        <a href="#" role="btn">
+                                            <button type="button" class="offer-card-btn automation-btn2">Details +
+                                            </button>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <a href="#" role="button" class="btn-sty-1 service-btn">
+                        All Services <span>&#10095;&#10095;</span>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <!-- Working Process Start  -->
+    <section class="section woking-process">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="img-box d-flex justify-content-center small--img--bgcolor small-img-bgcolor">
+                                <img src="assets/img/pencile.webp" alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body-title d-flex align-items-center">
+                                <h2 class="position-relative dot text-white">
+                                    Working Process
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-flex items">
+                    <div class="col-lg-3 one position-relative">
+                        <div
+                            class="working-card-wrapper d-flex align-items-center justify-content-center flex-dir-column position-relative">
+                            <div
+                                class="working-card text-center d-flex align-items-center justify-content-center position-relative">
+                                <img src="assets/img/1 (2).webp" alt="" class="img-fluid">
+                                <div class="chakk  chakra ">
+                                    <img src="assets/img/circle.webp" alt="" class="" width="165">
+                                </div>
+                            </div>
+                            <div class="working-title">
+                                <p class="text-white">Idea Generation</p>
+                            </div>
+                        </div>
+                        <img src="assets/img/arrow-shape1.webp" alt="" class="arrow-shape" width="" height="">
+                    </div>
+                    <div class="col-lg-3 two position-relative">
+                        <div
+                            class="working-card-wrapper d-flex align-items-center justify-content-center flex-dir-column position-relative">
+                            <div
+                                class="working-card text-center d-flex align-items-center justify-content-center position-relative">
+                                <img src="assets/img/2 (1).webp" alt="" class="img-fluid">
+                                <div class="chakk  chakra ">
+                                    <img src="assets/img/circle.webp" alt="" class="" width="165">
+                                </div>
+                            </div>
+                            <div class="working-title">
+                                <p class="text-white">Working Plan</p>
+                            </div>
+                        </div>
+                        <img src="assets/img/arrow-shape1.webp" alt="" class="shape-rotate" width="" height="">
+                    </div>
+                    <div class="col-lg-3 three position-relative">
+                        <div
+                            class="working-card-wrapper d-flex align-items-center justify-content-center flex-dir-column position-relative">
+                            <div
+                                class="working-card text-center d-flex align-items-center justify-content-center position-relative">
+                                <img src="assets/img/3 (2).webp" alt="" class="img-fluid">
+                                <div class="chakk  chakra ">
+                                    <img src="assets/img/circle.webp" alt="" class="" width="165">
+                                </div>
+                            </div>
+                            <div class="working-title">
+                                <p class="text-white">SEO Reasearch</p>
+                            </div>
+                        </div>
+                        <img src="assets/img/arrow-shape1.webp" alt="" class="arrow-shape" width="" height="">
+                    </div>
+                    <div class="col-lg-3 four">
+                        <div
+                            class="working-card-wrapper d-flex align-items-center justify-content-center flex-dir-column position-relative">
+                            <div
+                                class="working-card text-center d-flex align-items-center justify-content-center position-relative">
+                                <img src="assets/img/4 (1).webp" alt="" class="img-fluid">
+                                <div class="chakk  chakra ">
+                                    <img src="assets/img/circle.webp" alt="" class="" width="165">
+                                </div>
+                            </div>
+                            <div class="working-title">
+                                <p class="text-white">Launch Project</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Trusted Company  -->
+    <section class="trusted-company position-relative">
+            <img src="assets/img/bg (2).webp" alt="" class="bg-2">
+            <div class="container-fluid">
+                <div class="row flex-dir-column-lg-mb r-gap-lg-70">
+                    <div class="col-lg-6 left-ani w-lg-100">
+                        <img src="assets/img/1 (3).webp" alt="" class="img-fluid left">
+                    </div>
+                    <div class="col-lg-6 w-lg-100">
+                        <strong class="why-chose text-gradian-color position-relative">// WHAY CHOOSE US?</strong
+                            class="why-chose">
+                        <h3 class="typography-1">We Are Trusted Digital Marketing Company.</h3>
+                        <p class="text-style-1 dot position-relative dott">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                            1500s, when an unknown printer took a galley of type scrambled.</p>
+
+                        <div class="row trusted-title">
+                            <div class="col-lg-12">
+                                <div class="d-flex flex-dir-column-sm-mb">
+                                    <div class="img--box small-img-bgcolor">
+                                        <img src="assets/img/1 (4).webp" alt="...">
+                                    </div>
+                                    <div class="discription ms-sm-0 mt-sm-2">
+                                        <h3 class="typography-2">High Customer Retention Rate</h3>
+                                        <p class="text-style-1">Lorem Ipsum is simply dummy text of the printing typesetting
+                                            Ipsum has been the industry's standard dummy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="d-flex flex-dir-column-sm-mb">
+                                    <div class="img--box small-img-bgcolor">
+                                        <img src="assets/img/2 (2).webp" alt="...">
+                                    </div>
+                                    <div class="discription ms-sm-0 mt-sm-2">
+                                        <h3 class="typography-2">Dedicated Customer Support</h3>
+                                        <p class="text-style-1">Lorem Ipsum is simply dummy text of the printing typesetting
+                                            Ipsum has been the industry's standard dummy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="d-flex flex-dir-column-sm-mb">
+                                    <div class="img--box small-img-bgcolor">
+                                        <img src="assets/img/3 (3).webp" alt="...">
+                                    </div>
+                                    <div class="discription ms-sm-0 mt-sm-2">
+                                        <h3 class="typography-2">Professional Team Member</h3>
+                                        <p class="text-style-1">Lorem Ipsum is simply dummy text of the printing typesetting
+                                            Ipsum has been the industry's standard dummy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Case Studies  -->
+    <section class="case-studies section">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="img-box d-flex justify-content-center small-img-bgcolor">
+                                <img src="assets/img/sharing.webp" alt="" class="img-fluid">
+                            </div>
+                            <div class="card-body-title d-flex align-items-center">
+                                <h2 class="position-relative dot">
+                                    Some Case Studies
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider  -->
+                <div class="swiper case_studies_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-body text-center">
+                                <div class="card">
+                                    <img src="assets/img/caseshape2.webp" alt="">
+                                    <img src="assets/img/caseshape1.webp" alt="">
+                                    <img src="assets/img/case1.webp" alt="">
+                                </div>
+                                <div class="case-card-content">
+                                    <h3 class="typography-2"><a href="#">Marketing Automation</a></h3>
+                                    <p class="text-style-2">Digital Strategy / Consulting</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-body text-center">
+                                <div class="card">
+                                    <img src="assets/img/caseshape2.webp" alt="">
+                                    <img src="assets/img/caseshape1.webp" alt="">
+                                    <img src="assets/img/case-2.webp" alt="">
+                                </div>
+                                <div class="case-card-content">
+                                    <h3 class="typography-2"><a href="#">Marketing Automation</a></h3>
+                                    <p class="text-style-2">Digital Strategy / Consulting</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-body text-center">
+                                <div class="card">
+                                    <img src="assets/img/caseshape2.webp" alt="">
+                                    <img src="assets/img/caseshape1.webp" alt="">
+                                    <img src="assets/img/case3.webp" alt="">
+                                </div>
+                                <div class="case-card-content">
+                                    <h3 class="typography-2"><a href="#">Marketing Automation</a></h3>
+                                    <p class="text-style-2">Digital Strategy / Consulting</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-body text-center">
+                                <div class="card">
+                                    <img src="assets/img/caseshape2.webp" alt="">
+                                    <img src="assets/img/caseshape1.webp" alt="">
+                                    <img src="assets/img/case1.webp" alt="">
+                                </div>
+                                <div class="case-card-content">
+                                    <h3 class="typography-2"><a href="#">Marketing Automation</a></h3>
+                                    <p class="text-style-2">Digital Strategy / Consulting</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-body text-center">
+                                <div class="card">
+                                    <img src="assets/img/caseshape2.webp" alt="">
+                                    <img src="assets/img/caseshape1.webp" alt="">
+                                    <img src="assets/img/case-2.webp" alt="">
+                                </div>
+                                <div class="case-card-content">
+                                    <h3 class="typography-2"><a href="#">Marketing Automation</a></h3>
+                                    <p class="text-style-2">Digital Strategy / Consulting</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-body text-center">
+                                <div class="card">
+                                    <img src="assets/img/caseshape2.webp" alt="">
+                                    <img src="assets/img/caseshape1.webp" alt="">
+                                    <img src="assets/img/case1.webp" alt="">
+                                </div>
+                                <div class="case-card-content">
+                                    <h3 class="typography-2"><a href="#">Marketing Automation</a></h3>
+                                    <p class="text-style-2">Digital Strategy / Consulting</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-body text-center">
+                                <div class="card">
+                                    <img src="assets/img/caseshape2.webp" alt="">
+                                    <img src="assets/img/caseshape1.webp" alt="">
+                                    <img src="assets/img/case-2.webp" alt="">
+                                </div>
+                                <div class="case-card-content">
+                                    <h3 class="typography-2"><a href="#">Marketing Automation</a></h3>
+                                    <p class="text-style-2">Digital Strategy / Consulting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev-unique one">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m4.836 12l6.207 6.207l1.414-1.414L7.664 12l4.793-4.793l-1.414-1.414L4.836 12Zm5.65 0l6.207 6.207l1.414-1.414L13.314 12l4.793-4.793l-1.414-1.414L10.486 12Z" />
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next-unique two">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="m19.164 12l-6.207-6.207l-1.414 1.414L16.336 12l-4.793 4.793l1.414 1.414L19.164 12Zm-5.65 0L7.307 5.793L5.893 7.207L10.686 12l-4.793 4.793l1.414 1.414L13.514 12Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <!-- Amazing Team  -->
+    <section class="section amazing__team">
+        <div class="container">
+            <div class="row d-flex justify-content-center amaz-title">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="img-box d-flex justify-content-center small--img--bgcolor small-img-bgcolor">
+                            <img src="assets/img/amazingteam.webp" alt="" class="img-fluid" />
+                        </div>
+                        <div class="card-body-title d-flex align-items-center">
+                            <h2 class="position-relative dot text-white text-sm-center">
+                                Amazing Team Members
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row amaz-team-member">
+                <div class="col-lg-3">
+                    <div class="amaz-img-box position-relative">
+                        <img src="assets/img/amaztemimg1.webp" alt="" class="img-fluid" />
+                        <div class="amaz-overlay chakk chakra">
+                            <img src="assets/img/team-hover.webp" alt="" />
+                        </div>
+                        <div class="amaz-social-icon">
+                            <span class="fb">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="" d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z" />
+                                    </svg>
+                                </a>
+                            </span>
+                            <span class="tw">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            fill=""
+                                            d="M22 5.8a8.49 8.49 0 0 1-2.36.64a4.13 4.13 0 0 0 1.81-2.27a8.21 8.21 0 0 1-2.61 1a4.1 4.1 0 0 0-7 3.74a11.64 11.64 0 0 1-8.45-4.29a4.16 4.16 0 0 0-.55 2.07a4.09 4.09 0 0 0 1.82 3.41a4.05 4.05 0 0 1-1.86-.51v.05a4.1 4.1 0 0 0 3.3 4a3.93 3.93 0 0 1-1.1.17a4.9 4.9 0 0 1-.77-.07a4.11 4.11 0 0 0 3.83 2.84A8.22 8.22 0 0 1 3 18.34a7.93 7.93 0 0 1-1-.06a11.57 11.57 0 0 0 6.29 1.85A11.59 11.59 0 0 0 20 8.45v-.53a8.43 8.43 0 0 0 2-2.12Z"
+                                        />
+                                    </svg>
+                                </a>
+                            </span>
+                            <span class="sky">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            fill=""
+                                            d="M13.31 20.4a8.5 8.5 0 0 1-9.71-9.71a5.25 5.25 0 0 1 7.09-7.09a8.5 8.5 0 0 1 9.71 9.71a5.25 5.25 0 0 1-7.09 7.09Zm-1.257-3.244h-.04c2.872 0 4.303-1.386 4.303-3.243c0-1.198-.551-2.471-2.726-2.958l-1.983-.44c-.755-.172-1.622-.4-1.622-1.115s.62-1.213 1.724-1.213c2.23 0 2.027 1.528 3.131 1.528c.576 0 1.093-.342 1.093-.93c0-1.37-2.197-2.4-4.056-2.4c-2.021 0-4.173.859-4.173 3.144c0 1.098.394 2.27 2.56 2.813l2.689.671c.816.202 1.018.659 1.018 1.072c0 .687-.684 1.358-1.918 1.358c-2.417 0-2.078-1.857-3.374-1.857c-.58 0-1.003.398-1.003.971c0 1.114 1.352 2.598 4.377 2.598Z"
+                                        />
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="amazz-title text-center">
+                        <h3 class="typegraphy-2 text-white text-center">
+                            Willie Mckenzie
+                        </h3>
+                        <small class="">DIGITAL STRATEGIST</small>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="amaz-img-box position-relative">
+                        <img src="assets/img/amaztemimg2.webp" alt="" class="img-fluid" />
+                        <div class="amaz-overlay chakk chakra">
+                            <img src="assets/img/team-hover.webp" alt="" />
+                        </div>
+                        <div class="amaz-social-icon">
+                            <span class="fb">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="" d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z" />
+                                    </svg>
+                                </a>
+                            </span>
+                            <span class="tw">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            fill=""
+                                            d="M22 5.8a8.49 8.49 0 0 1-2.36.64a4.13 4.13 0 0 0 1.81-2.27a8.21 8.21 0 0 1-2.61 1a4.1 4.1 0 0 0-7 3.74a11.64 11.64 0 0 1-8.45-4.29a4.16 4.16 0 0 0-.55 2.07a4.09 4.09 0 0 0 1.82 3.41a4.05 4.05 0 0 1-1.86-.51v.05a4.1 4.1 0 0 0 3.3 4a3.93 3.93 0 0 1-1.1.17a4.9 4.9 0 0 1-.77-.07a4.11 4.11 0 0 0 3.83 2.84A8.22 8.22 0 0 1 3 18.34a7.93 7.93 0 0 1-1-.06a11.57 11.57 0 0 0 6.29 1.85A11.59 11.59 0 0 0 20 8.45v-.53a8.43 8.43 0 0 0 2-2.12Z"
+                                        />
+                                    </svg>
+                                </a>
+                            </span>
+                            <span class="sky">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            fill=""
+                                            d="M13.31 20.4a8.5 8.5 0 0 1-9.71-9.71a5.25 5.25 0 0 1 7.09-7.09a8.5 8.5 0 0 1 9.71 9.71a5.25 5.25 0 0 1-7.09 7.09Zm-1.257-3.244h-.04c2.872 0 4.303-1.386 4.303-3.243c0-1.198-.551-2.471-2.726-2.958l-1.983-.44c-.755-.172-1.622-.4-1.622-1.115s.62-1.213 1.724-1.213c2.23 0 2.027 1.528 3.131 1.528c.576 0 1.093-.342 1.093-.93c0-1.37-2.197-2.4-4.056-2.4c-2.021 0-4.173.859-4.173 3.144c0 1.098.394 2.27 2.56 2.813l2.689.671c.816.202 1.018.659 1.018 1.072c0 .687-.684 1.358-1.918 1.358c-2.417 0-2.078-1.857-3.374-1.857c-.58 0-1.003.398-1.003.971c0 1.114 1.352 2.598 4.377 2.598Z"
+                                        />
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="amazz-title text-center">
+                        <h3 class="typegraphy-2 text-white text-center">
+                            Rosie Greene
+                        </h3>
+                        <small class="">PROJECT MANAGER</small>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="amaz-img-box position-relative">
+                        <img src="assets/img/amaztemimg3.webp" alt="" class="img-fluid" />
+                        <div class="amaz-overlay chakk chakra">
+                            <img src="assets/img/team-hover.webp" alt="" />
+                        </div>
+                        <div class="amaz-social-icon">
+                            <span class="fb">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="" d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z" />
+                                    </svg>
+                                </a>
+                            </span>
+                            <span class="tw">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            fill=""
+                                            d="M22 5.8a8.49 8.49 0 0 1-2.36.64a4.13 4.13 0 0 0 1.81-2.27a8.21 8.21 0 0 1-2.61 1a4.1 4.1 0 0 0-7 3.74a11.64 11.64 0 0 1-8.45-4.29a4.16 4.16 0 0 0-.55 2.07a4.09 4.09 0 0 0 1.82 3.41a4.05 4.05 0 0 1-1.86-.51v.05a4.1 4.1 0 0 0 3.3 4a3.93 3.93 0 0 1-1.1.17a4.9 4.9 0 0 1-.77-.07a4.11 4.11 0 0 0 3.83 2.84A8.22 8.22 0 0 1 3 18.34a7.93 7.93 0 0 1-1-.06a11.57 11.57 0 0 0 6.29 1.85A11.59 11.59 0 0 0 20 8.45v-.53a8.43 8.43 0 0 0 2-2.12Z"
+                                        />
+                                    </svg>
+                                </a>
+                            </span>
+                            <span class="sky">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            fill=""
+                                            d="M13.31 20.4a8.5 8.5 0 0 1-9.71-9.71a5.25 5.25 0 0 1 7.09-7.09a8.5 8.5 0 0 1 9.71 9.71a5.25 5.25 0 0 1-7.09 7.09Zm-1.257-3.244h-.04c2.872 0 4.303-1.386 4.303-3.243c0-1.198-.551-2.471-2.726-2.958l-1.983-.44c-.755-.172-1.622-.4-1.622-1.115s.62-1.213 1.724-1.213c2.23 0 2.027 1.528 3.131 1.528c.576 0 1.093-.342 1.093-.93c0-1.37-2.197-2.4-4.056-2.4c-2.021 0-4.173.859-4.173 3.144c0 1.098.394 2.27 2.56 2.813l2.689.671c.816.202 1.018.659 1.018 1.072c0 .687-.684 1.358-1.918 1.358c-2.417 0-2.078-1.857-3.374-1.857c-.58 0-1.003.398-1.003.971c0 1.114 1.352 2.598 4.377 2.598Z"
+                                        />
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="amazz-title text-center">
+                        <h3 class="typegraphy-2 text-white text-center">
+                            Stacey Evans
+                        </h3>
+                        <small class="">UI/UX DESIGNER</small>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="amaz-img-box position-relative">
+                        <img src="assets/img/amaztemimg4.webp" alt="" class="img-fluid" />
+                        <div class="amaz-overlay chakk chakra">
+                            <img src="assets/img/team-hover.webp" alt="" />
+                        </div>
+                        <div class="amaz-social-icon">
+                            <span class="fb">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path fill="" d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z" />
+                                    </svg>
+                                </a>
+                            </span>
+                            <span class="tw">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            fill=""
+                                            d="M22 5.8a8.49 8.49 0 0 1-2.36.64a4.13 4.13 0 0 0 1.81-2.27a8.21 8.21 0 0 1-2.61 1a4.1 4.1 0 0 0-7 3.74a11.64 11.64 0 0 1-8.45-4.29a4.16 4.16 0 0 0-.55 2.07a4.09 4.09 0 0 0 1.82 3.41a4.05 4.05 0 0 1-1.86-.51v.05a4.1 4.1 0 0 0 3.3 4a3.93 3.93 0 0 1-1.1.17a4.9 4.9 0 0 1-.77-.07a4.11 4.11 0 0 0 3.83 2.84A8.22 8.22 0 0 1 3 18.34a7.93 7.93 0 0 1-1-.06a11.57 11.57 0 0 0 6.29 1.85A11.59 11.59 0 0 0 20 8.45v-.53a8.43 8.43 0 0 0 2-2.12Z"
+                                        />
+                                    </svg>
+                                </a>
+                            </span>
+                            <span class="sky">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path
+                                            fill=""
+                                            d="M13.31 20.4a8.5 8.5 0 0 1-9.71-9.71a5.25 5.25 0 0 1 7.09-7.09a8.5 8.5 0 0 1 9.71 9.71a5.25 5.25 0 0 1-7.09 7.09Zm-1.257-3.244h-.04c2.872 0 4.303-1.386 4.303-3.243c0-1.198-.551-2.471-2.726-2.958l-1.983-.44c-.755-.172-1.622-.4-1.622-1.115s.62-1.213 1.724-1.213c2.23 0 2.027 1.528 3.131 1.528c.576 0 1.093-.342 1.093-.93c0-1.37-2.197-2.4-4.056-2.4c-2.021 0-4.173.859-4.173 3.144c0 1.098.394 2.27 2.56 2.813l2.689.671c.816.202 1.018.659 1.018 1.072c0 .687-.684 1.358-1.918 1.358c-2.417 0-2.078-1.857-3.374-1.857c-.58 0-1.003.398-1.003.971c0 1.114 1.352 2.598 4.377 2.598Z"
+                                        />
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="amazz-title text-center">
+                        <h3 class="typegraphy-2 text-white">
+                            Marian Adams
+                        </h3>
+                        <small class="">SEO SPECIALIST</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- FaQ  -->
+    <section class="section faq position-relative">
+        <img src="assets/img/bg (2).webp" alt="" class="bg-2" />
+        <div class="container">
+            <div class="row flex-dir-column-lg-mb r-gap-lg-70">
+                <div class="col-lg-6 left-ani">
+                    <img src="assets/img/faqimg1.webp" alt="" class="img-fluid left" />
+                </div>
+                <div class="col-lg-6">
+                    <strong class="why-chose text-gradian-color position-relative">// FAQ. </strong>
+                    <h3 class="typography-1">Frequiently Asked Question.</h3>
+                    <p class="dot position-relative dott"></p>
+                    <div class="acc-main">
+                        <div class="ac">
+                            <input class="ac-input" id="ac-1" name="ac-1" type="checkbox" />
+                            <label class="ac-label" for="ac-1">1. How can I start SEO Marketing?</label>
+                            <article class="ac-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, vel hic nisi laborum voluptatum non rerum numquam ipsum autem, ducimus earum iusto delectus veniam, accusamus veritatis consequatur a assumenda
+                                    sapiente.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="ac">
+                            <input class="ac-input" id="ac-2" name="ac-1" type="checkbox" />
+                            <label class="ac-label" for="ac-2">2. How can I start SEO Marketing?</label>
+                            <article class="ac-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, vel hic nisi laborum voluptatum non rerum numquam ipsum autem, ducimus earum iusto delectus veniam, accusamus veritatis consequatur a assumenda
+                                    sapiente.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="ac">
+                            <input class="ac-input" id="ac-3" name="ac-1" type="checkbox" />
+                            <label class="ac-label" for="ac-3">3. How can I start SEO Marketing?</label>
+                            <article class="ac-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, vel hic nisi laborum voluptatum non rerum numquam ipsum autem, ducimus earum iusto delectus veniam, accusamus veritatis consequatur a assumenda
+                                    sapiente.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="ac">
+                            <input class="ac-input" id="ac-4" name="ac-1" type="checkbox" />
+                            <label class="ac-label" for="ac-4">4. How can I start SEO Marketing?</label>
+                            <article class="ac-text">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, vel hic nisi laborum voluptatum non rerum numquam ipsum autem, ducimus earum iusto delectus veniam, accusamus veritatis consequatur a assumenda
+                                    sapiente.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Happy Customer  -->
+    <section class="happ-customer section">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="img-box d-flex justify-content-center small-img-bgcolor">
+                            <img src="assets/img/testimonial.webp" alt="" class="img-fluid" />
+                        </div>
+                        <div class="card-body-title d-flex align-items-center">
+                            <h2 class="position-relative dot">
+                                From Happy Customer
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <img src="assets/img/testi-per-1.webp" alt="" class="zoom-in-out-box back-img" />
+                <img src="assets/img/testi-per-2.webp" alt="" class="zoom-in-out-box back-img" />
+                <img src="assets/img/testi-per-3.webp" alt="" class="zoom-in-out-box back-img" />
+                <img src="assets/img/testi-per-4.webp" alt="" class="zoom-in-out-box back-img" />
+                <img src="assets/img/testi-per-5.webp" alt="" class="zoom-in-out-box back-img" />
+                <img src="assets/img/testi-per-6.webp" alt="" class="zoom-in-out-box back-img" />
+
+                <div class="top">
+                    <img src="assets/img/testi-shape.webp" alt="" class="" />
+                    <div class="swiper happy-cus-slid">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="top-inner">
+                                    <div class="testi--per-wrap">
+                                        <img src="assets/img/testi-per-1.webp" alt="" class="" />
+                                        <span class="qutation text-gradian-color">“</span>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text the printing and typesetting as been the industry's standard dummy text ever since the 1500s when unknown printer took a galley of type and scrambled it to make
+                                            specimen book has survived not only five centuries
+                                        </p>
+                                        <h3 class="">Geogia Jones</h3>
+                                        <p class="text-style-2">Ui/Ux desinger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-inner">
+                                    <div class="testi--per-wrap">
+                                        <img src="assets/img/testi-per-1.webp" alt="" class="" />
+                                        <span class="qutation text-gradian-color">“</span>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text the printing and typesetting as been the industry's standard dummy text ever since the 1500s when unknown printer took a galley of type and scrambled it to make
+                                            specimen book has survived not only five centuries
+                                        </p>
+                                        <h3 class="">Geogia Jones</h3>
+                                        <p class="text-style-2">Ui/Ux desinger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-inner">
+                                    <div class="testi--per-wrap">
+                                        <img src="assets/img/testi-per-1.webp" alt="" class="" />
+                                        <span class="qutation text-gradian-color">“</span>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text the printing and typesetting as been the industry's standard dummy text ever since the 1500s when unknown printer took a galley of type and scrambled it to make
+                                            specimen book has survived not only five centuries
+                                        </p>
+                                        <h3 class="">Geogia Jones</h3>
+                                        <p class="text-style-2">Ui/Ux desinger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-inner">
+                                    <div class="testi--per-wrap">
+                                        <img src="assets/img/testi-per-1.webp" alt="" class="" />
+                                        <span class="qutation text-gradian-color">“</span>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text the printing and typesetting as been the industry's standard dummy text ever since the 1500s when unknown printer took a galley of type and scrambled it to make
+                                            specimen book has survived not only five centuries
+                                        </p>
+                                        <h3 class="">Geogia Jones</h3>
+                                        <p class="text-style-2">Ui/Ux desinger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-inner">
+                                    <div class="testi--per-wrap">
+                                        <img src="assets/img/testi-per-1.webp" alt="" class="" />
+                                        <span class="qutation text-gradian-color">“</span>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text the printing and typesetting as been the industry's standard dummy text ever since the 1500s when unknown printer took a galley of type and scrambled it to make
+                                            specimen book has survived not only five centuries
+                                        </p>
+                                        <h3 class="">Geogia Jones</h3>
+                                        <p class="text-style-2">Ui/Ux desinger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-inner">
+                                    <div class="testi--per-wrap">
+                                        <img src="assets/img/testi-per-1.webp" alt="" class="" />
+                                        <span class="qutation text-gradian-color">“</span>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text the printing and typesetting as been the industry's standard dummy text ever since the 1500s when unknown printer took a galley of type and scrambled it to make
+                                            specimen book has survived not only five centuries
+                                        </p>
+                                        <h3 class="">Geogia Jones</h3>
+                                        <p class="text-style-2">Ui/Ux desinger</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="top-inner">
+                                    <div class="testi--per-wrap">
+                                        <img src="assets/img/testi-per-1.webp" alt="" class="" />
+                                        <span class="qutation text-gradian-color">“</span>
+                                    </div>
+                                    <div class="testi-content">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text the printing and typesetting as been the industry's standard dummy text ever since the 1500s when unknown printer took a galley of type and scrambled it to make
+                                            specimen book has survived not only five centuries
+                                        </p>
+                                        <h3 class="">Geogia Jones</h3>
+                                        <p class="text-style-2">Ui/Ux desinger</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Blog  -->
+    <section class="blog">
+        <div class="container">
+            <div class="row justify-content-space-between flex-dir-column-lg-mb">
+                <div class="col-lg-6 bleft">
+                    <div class="row flex-dir-column align-items-center">
+                        <div class="col-xl-12 text-sm-center">
+                            <h3 class="typography-1 ">
+                                Latest News From 
+                                Our Blog.
+                            </h3>
+                            <p class="dot position-relative dott"></p>
+                        </div>
+                        <div class="col-xl-12 bleft-bottom">
+                            <div class="bleft-bot-imgbox">
+                                <img src="assets/img/blog-img-1.webp" alt="" class="" />
+                            </div>
+                            <div class="bleft-bot-content">
+                                <p>By Admin / 12 January, 2021 / <span class="text-gradian-color">Digital Marketing.</span></p>
+                                <h3 class="typography-2">
+                                    <a href="#" class="text-blue">
+                                        The Step-by-Step Guide to Improving Your
+                                        Google Rankings.
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 bright">
+                    <div class="row flex-dir-column">
+                        <div class="col-xl-12 bleft-bottom d-flex align-items-center flex-dir-column-sm-mb align-items-center-inherit">
+                            <div class="bleft-bot-imgbo x">
+                                <img src="assets/img/blog-img-2.webp" alt="" class="" />
+                            </div>
+                            <div class="bleft-bot-content">
+                                <p>By Admin / 12 January, 2021 / <span class="text-gradian-color">Digital Marketing.</span></p>
+                                <h3 class="typography-2"><a href="#" class="text-blue">The Step-by-Step Guide to improving your google rankings.</a></h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 bleft-bottom bright d-flex align-items-center flex-dir-column-sm-mb align-items-center-inherit">
+                            <div class="bleft-bot-imgbo x">
+                                <img src="assets/img/blog-img-3.webp" alt="" class="" />
+                            </div>
+                            <div class="bleft-bot-content">
+                                <p>By Admin / 12 January, 2021 / <span class="text-gradian-color">Digital Marketing.</span></p>
+                                <h3 class="typography-2"><a href="#" class="text-blue">The Step-by-Step Guide to improving your google rankings.</a></h3>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 bleft-bottom bright d-flex align-items-center flex-dir-column-sm-mb align-items-center-inherit">
+                            <div class="bleft-bot-imgbo x">
+                                <img src="assets/img/blog-img-4.webp" alt="" class="" />
+                            </div>
+                            <div class="bleft-bot-content">
+                                <p>By Admin / 12 January, 2021 / <span class="text-gradian-color">Digital Marketing.</span></p>
+                                <h3 class="typography-2"><a href="#" class="text-blue">The Step-by-Step Guide to improving your google rankings. </a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer  -->
+    <footer class="" id="footer">
+        <div class="container">
+            <div class="row align-items-center flex-dir-column">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="img-box d-flex justify-content-center small--img--bgcolor small-img-bgcolor">
+                            <img src="assets/img/launcher.webp" alt="" class="img-fluid" />
+                        </div>
+                        <div class="card-body-title d-flex align-items-center">
+                            <h2 class="position-relative dot text-white text-sm-center">
+                                Subscribe To Our Newsletter
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="fanima-img left-ani">
+                        <img src="assets/img/path-shape.webp" alt="" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <form action="" class="news-form position-relative">
+                        <input type="text" class="sbuscribe w-100" placeholder="Enter Your Email Address" />
+                        <button class="btn-sty-1 subs-btn">Subscribe Now <span>&#8250;&#8250;</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="row footer-mid">
+                <div class="col-lg-30">
+                    <div class="foot-logo">
+                        <img src="assets/img/logo-white.webp" alt="" />
+                    </div>
+                    <div class="foot-contct d-flex align-items-center">
+                        <div class="ftleft">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <defs>
+                                    <linearGradient id="Gradient1" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color: #fc7318;" />
+                                        <stop offset="100%" style="stop-color: #feb423;" />
+                                    </linearGradient>
+                                </defs>
+
+                                <path
+                                    fill="url(#Gradient1)"
+                                    d="M5 9.86a18.466 18.466 0 0 0 9.566 9.292l.68.303a3.5 3.5 0 0 0 4.33-1.247l.889-1.324a1 1 0 0 0-.203-1.335l-3.012-2.43a1 1 0 0 0-1.431.183l-.932 1.257a12.14 12.14 0 0 1-5.51-5.511l1.256-.932a1 1 0 0 0 .183-1.431l-2.43-3.012a1 1 0 0 0-1.335-.203l-1.333.894a3.5 3.5 0 0 0-1.237 4.355L5 9.86Z"
+                                />
+                            </svg>
+                        </div>
+                        <div class="ftright">
+                            <a href="#" class="">(+88) 454 632 897</a>
+                        </div>
+                    </div>
+                    <div class="foot-contct d-flex align-items-center">
+                        <div class="ftleft">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <defs>
+                                    <linearGradient id="Gradient1" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color: #fc7318;" />
+                                        <stop offset="100%" style="stop-color: #feb423;" />
+                                    </linearGradient>
+                                </defs>
+                                <path fill="url(#Gradient1)" d="M22 5.5H9c-1.1 0-2 .9-2 2v9a2 2 0 0 0 2 2h13c1.11 0 2-.89 2-2v-9a2 2 0 0 0-2-2m0 3.67l-6.5 3.33L9 9.17V7.5l6.5 3.31L22 7.5v1.67M5 16.5c0 .17.03.33.05.5H1c-.552 0-1-.45-1-1s.448-1 1-1h4v1.5M3 7h2.05c-.02.17-.05.33-.05.5V9H3c-.55 0-1-.45-1-1s.45-1 1-1m-2 5c0-.55.45-1 1-1h3v2H2c-.55 0-1-.45-1-1Z"/>
+                            </svg>
+                        </div>
+                        <div class="ftright">
+                            <a href="#" class="text-white">demo@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="foot-contct d-flex align-items-center">
+                        <div class="ftleft">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <defs>
+                                    <linearGradient id="Gradient1" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color: #fc7318;" />
+                                        <stop offset="100%" style="stop-color: #feb423;" />
+                                    </linearGradient>
+                                </defs>
+                                <path fill="url(#Gradient1)" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Z"/>
+                            </svg>
+                        </div>
+                        <div class="ftright">
+                            Chilton, Texas(TX), 76632
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-23">
+                    <article class="ftarti text-white text- center">
+                        All Services
+                    </article>
+                    <div class="ft_soci_link d-flex justify-content -center">
+                        <ul>
+                            <li class="">
+                                <a href="#"><span>&#10095;&#10095;</span> Social Marketing</a>
+                            </li>
+                            <li class="">
+                                <a href="#"><span>&#10095;&#10095;</span> SEO Optimization</a>
+                            </li>
+                            <li class="">
+                                <a href="#"><span>&#10095;&#10095;</span> Content Marketing</a>
+                            </li>
+                            <li class="">
+                                <a href="#"><span>&#10095;&#10095;</span> Social Marketing</a>
+                            </li>
+                            <li class="">
+                                <a href="#"><span>&#10095;&#10095;</span> Web Analytics</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-23">
+                    <article class="ftarti text-white text- center">
+                        Information
+                    </article>
+                    <div class="ft_soci_link d-flex justify-content- center">
+                        <ul>
+                            <li class="">
+                                <a href="#"><span>&#10095;&#10095;</span> Vision & Values
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#"><span>&#10095;&#10095;</span> Winning Awards
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#"><span>&#10095;&#10095;</span> Leadership
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#"><span>&#10095;&#10095;</span> Sustainability
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#"><span>&#10095;&#10095;</span>Careers</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-23">
+                    <article class="ftarti text-white text- center">
+                        Follow Us
+                    </article>
+                    <div class="ftfoll-content text-white d-flex justify-content- center">
+                        <p>Lorem Ipsum is simply dummy text the printing and typesetting.
+                        </p>
+                    </div>
+                    <div class="ftright-soci-link d-flex justify-content- center">
+                            <ul class="d-flex align-items-center">
+                                <li class="faceb">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 50 50"><path fill="" d="M26 20v-3c0-1.3.3-2 2.4-2H31v-5h-4c-5 0-7 3.3-7 7v3h-4v5h4v15h6V25h4.4l.6-5h-5z"/></svg>
+                                    </a>
+                                </li>
+                                <li class="twitt">
+                                    <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 50 50"><path fill="" d="M39.2 16.8c-1.1.5-2.2.8-3.5 1c1.2-.8 2.2-1.9 2.7-3.3c-1.2.7-2.5 1.2-3.8 1.5c-1.1-1.2-2.7-1.9-4.4-1.9c-3.3 0-6.1 2.7-6.1 6.1c0 .5.1.9.2 1.4c-5-.2-9.5-2.7-12.5-6.3c-.5.7-.8 1.7-.8 2.8c0 2.1 1.1 4 2.7 5c-1 0-1.9-.3-2.7-.8v.1c0 2.9 2.1 5.4 4.9 5.9c-.5.1-1 .2-1.6.2c-.4 0-.8 0-1.1-.1c.8 2.4 3 4.2 5.7 4.2c-2.1 1.6-4.7 2.6-7.5 2.6c-.5 0-1 0-1.4-.1c2.4 1.9 5.6 2.9 9 2.9c11.1 0 17.2-9.2 17.2-17.2V20c1.2-.9 2.2-1.9 3-3.2z"/></svg>
+                                    </a>
+                                </li>
+                                <li class="skkpe">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.4em" height="1.4em" viewBox="0 0 50 50"><path fill="" d="M38 27.3c.1-.8.2-1.6.2-2.4c0-1.8-.3-3.5-1-5.1c-.7-1.6-1.6-3-2.8-4.2c-1.2-1.2-2.6-2.2-4.2-2.8c-1.6-.7-3.4-1-5.1-1c-.8 0-1.7.1-2.5.2c-1.1-.6-2.4-.9-3.7-.9c-2.1 0-4.1.8-5.5 2.3c-1.5 1.5-2.3 3.4-2.3 5.5c0 1.3.3 2.6 1 3.8c-.1.7-.2 1.5-.2 2.3c0 1.8.3 3.5 1 5.1c.7 1.6 1.6 3 2.8 4.2c1.2 1.2 2.6 2.2 4.2 2.8c1.6.7 3.4 1 5.1 1c.8 0 1.6-.1 2.3-.2c1.2.7 2.5 1 3.9 1c2.1 0 4.1-.8 5.5-2.3c1.5-1.5 2.3-3.4 2.3-5.5c0-1.3-.3-2.6-1-3.8zM25.1 33c-4.7 0-6.8-2.3-6.8-4c0-.9.7-1.5 1.6-1.5c2 0 1.5 2.9 5.2 2.9c1.9 0 3-1 3-2.1c0-.6-.3-1.4-1.6-1.7l-4.2-1c-3.4-.8-4-2.7-4-4.4c0-3.6 3.3-4.9 6.5-4.9c2.9 0 6.3 1.6 6.3 3.7c0 .9-.8 1.4-1.7 1.4c-1.7 0-1.4-2.4-4.9-2.4c-1.7 0-2.7.8-2.7 1.9c0 1.1 1.4 1.5 2.5 1.7l3.1.7c3.4.8 4.2 2.7 4.2 4.6c.1 2.9-2.1 5.1-6.5 5.1z"/></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright © 2023 Made With <span class="text-gradian-color">&#10084;</span> By <span>HasThemes</span> All Rights Reserved
+            </p>
+        </div>
+    </footer>
+                            
+<!-- https://preview.themeforest.net/item/pringo-digital-marketing-bootstrap-5-template/full_screen_preview/30997676?_ga=2.265515980.257904136.1696410340-1094678248.1691153886 -->
+<!-- jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Swiper js  -->
+    <script src="assets/JS/swiper-js-bundle.min.js"></script>
+    <!-- Js File   -->
+    <script src="assets/JS/main.js"></script>
+</body>
+</html>
