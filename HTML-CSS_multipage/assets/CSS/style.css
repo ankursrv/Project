@@ -130,7 +130,10 @@ h6 {
 .typography-2 {
   font-size: 1.5rem;
 }
-
+.typography-3 {
+  font-size: 2.5rem;
+  font-family: var(--primary-font);
+}
 /** Button  **/
 button {
   border: none;
@@ -186,7 +189,7 @@ button {
 /* Text-Styling  */
 .text-style-1 {
   line-height: 1.8;
-  opacity: 0.8;
+  opacity: 0.6;
   margin: 1.5rem 0;
   font-size: 15px;
   font-family: var(--secondary-font);
@@ -196,6 +199,7 @@ button {
   font-weight: 400;
   font-family: var(--secondary-font);
 }
+/* Margin  */
 
 /** Heading bottom after-&-before dot  **/
 .dot::after,
@@ -1043,8 +1047,7 @@ input:focus {
 }
 
 /* Case studies slider navigation styling  */
-.case_studies_slider .swiper-button-prev-unique,
-.case_studies_slider .swiper-button-next-unique {
+.swiper-btn-styl {
   background: #f7faff;
   position: absolute;
   width: 55px;
@@ -1054,7 +1057,6 @@ input:focus {
   justify-content: center;
   z-index: 5;
   border: 2px solid transparent;
-  bottom: 5rem;
   box-shadow: 2px 1000px 1px #f7faff inset;
   -webkit-box-shadow: 2px 1000px 1px #f7faff inset;
   background-clip: content-box, border-box;
@@ -1068,8 +1070,7 @@ input:focus {
   border-radius: 50%;
   color: #fc7418;
 }
-.case_studies_slider .swiper-button-prev-unique:hover,
-.case_studies_slider .swiper-button-next-unique:hover {
+.swiper-btn-styl:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
@@ -1077,9 +1078,11 @@ input:focus {
 }
 .case_studies_slider .one {
   left: 0.625rem;
+  bottom: 5rem;
 }
 .case_studies_slider .two {
   right: 0.625rem;
+  bottom: 5rem;
 }
 /* End  */
 
@@ -1694,4 +1697,144 @@ input:focus {
 }
 #mbmenu:checked ~ .menu {
   display: block;
+}
+
+/************************** Service Page Start  ******************************/
+
+/* Service BAnner Start  */
+.servi-bann {
+  background: url("../img/servbg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 7rem 0;
+  background-position: center;
+  position: relative;
+  z-index: 50;
+}
+.ser-img {
+  position: absolute;
+  z-index: -1;
+}
+.ser-img-fir {
+  top: 0;
+  left: 0;
+}
+.ser-img-sec {
+  right: 0;
+  bottom: 0;
+}
+.servi-bann h1 {
+  font-weight: 500;
+}
+.bredcum {
+  margin-top: 1.3rem;
+}
+.bredcum svg {
+  margin: 0 8px;
+}
+.bredcum h5 {
+  font-weight: 700;
+}
+.bredcum h5:hover {
+  background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+.bredcum h6 {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+/* End  */
+
+/* Service Slider Start  */
+#servi-slider {
+  margin-bottom: 5rem;
+}
+.servi-slid .one,
+.servi-slid .two {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.servi-slid .one {
+  left: 1.625rem;
+}
+.servi-slid .two {
+  right: 1.625rem;
+}
+/* End  */
+
+/* Service SEO second  */
+.servi-seo-sec .col-lg-8 {
+  width: 65%;
+  flex: 0 0 auto;
+  padding-right: 2rem;
+}
+.servi-seo-sec .col-lg-4 {
+  width: 35%;
+  flex: 0 0 auto;
+}
+/* End  */
+
+/* Service SEO fourth */
+.servi-seo-four .col-lg-4 {
+  width: 50%;
+  flex: 0 0 auto;
+}
+.servi-seo-sec .col-lg-8 {
+  width: 50%;
+  flex: 0 0 auto;
+  padding-right: 2rem;
+}
+/* =================================
+    |   Progress Bar     |
+==================================== */
+.progress-box {
+  margin-bottom: 2rem;
+}
+.progress {
+  position: relative;
+  height: 10px;
+  overflow: visible;
+  border-radius: 0;
+  background: #f6f6f6;
+}
+
+.bar-title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 1rem;
+  color: #596190;
+}
+
+.progress-bar {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  color: inherit;
+  transition: width 1.8s linear;
+  background: var(--text-color-primary);
+}
+.progress-bar span {
+  position: absolute;
+  right: -23px;
+  top: 25px;
+  font-size: 14px;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 0 4px;
+  /* line-height: 1; */
+}
+.progress-bar span:after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  margin-left: -7px;
+  width: 0px;
+  height: 20px;
+  border-left: 3px solid rgb(254, 180, 35);
+  top: -30px;
 }

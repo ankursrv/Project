@@ -57,7 +57,7 @@ var swiper = new Swiper(".case_studies_slider", {
 // Happy Customer Slider
 var swiper = new Swiper(".happy-cus-slid", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  // spaceBetween: 30,
   autoplay: true,
   speed: 1000,
   loop: true,
@@ -98,3 +98,40 @@ for (let i = 0; i < items.length; i++) {
     this.classList.add("activee");
   });
 }
+
+// Service Slider
+var swiper = new Swiper(".servi-slid", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: false,
+  speed: 1000,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-unique",
+    prevEl: ".swiper-button-prev-unique",
+  },
+});
+
+// Service Progress Bar
+// Counter To Count Number Visit
+var a = 0;
+$(window).scroll(function () {
+  var oTop = $(".skill-conatainer").offset().top - window.innerHeight;
+  // Md.Asaduzzaman Muhid
+  if (a == 0 && $(window).scrollTop() >= oTop) {
+    $(".progress-bar").each(function () {
+      var percent = $(this).attr("aria-valuenow");
+      $(this)
+        .find("span")
+        .text(percent + "%");
+      $(this).css({
+        width: percent + "%",
+      });
+    });
+    a = 1; // Md.Asaduzzaman Muhid
+  }
+});
