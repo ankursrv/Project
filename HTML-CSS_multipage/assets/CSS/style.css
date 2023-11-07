@@ -1794,11 +1794,12 @@ input:focus {
 }
 .progress {
   position: relative;
-  height: 10px;
+  height: 5px;
   overflow: visible;
   border-radius: 0;
   background: #f6f6f6;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .bar-title {
@@ -1813,7 +1814,7 @@ input:focus {
   display: block;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 5px;
   width: 0;
   color: inherit;
   transition: width 1.8s linear;
@@ -1835,7 +1836,7 @@ input:focus {
   left: 50%;
   margin-left: -7px;
   width: 0px;
-  height: 20px;
+  height: 15px;
   border-left: 3px solid rgb(254, 180, 35);
   top: -30px;
 }
