@@ -18,7 +18,7 @@ html {
   --text-hover-primary: #fc7418;
 }
 
-/** Custom Css Start  **/
+/** Custom Css Start  *****/
 body {
   font-family: var(--primary-font);
   max-width: 1920px;
