@@ -77,6 +77,12 @@ li {
 .d-flex {
   display: flex;
 }
+.d-inline-block {
+  display: inline-block;
+}
+.d-inline-flex {
+  display: inline-flex;
+}
 .justify-content-space-between {
   justify-content: space-between;
 }
@@ -134,6 +140,10 @@ h6 {
   font-size: 2.5rem;
   font-family: var(--primary-font);
 }
+.typography-4 {
+  font-size: 2.3rem;
+  font-family: var(--primary-font);
+}
 /** Button  **/
 button {
   border: none;
@@ -164,6 +174,7 @@ button {
   padding: 16px 24px;
   border-radius: 8px;
   cursor: pointer;
+  font-weight: 600;
 }
 .btn-sty-1:hover {
   background: -webkit-linear-gradient(
@@ -184,6 +195,12 @@ button {
     #fea51a,
     #feb423
   );
+}
+.btn-text-sty {
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: var(--secondary-font);
 }
 
 /* Text-Styling  */
@@ -221,7 +238,8 @@ button {
   right: 38%;
 }
 
-input:focus {
+input:focus,
+textarea[rows="3"] {
   outline: none;
 }
 
@@ -1877,20 +1895,166 @@ input:focus {
 }
 /* End  */
 
+/************************** Case Details Page Start  **************************/
+
+/* Case Details slider Start */
 .case-det .col-lg-5 {
-  /* width: 30%; */
-  /* flex: 0 0 auto; */
   margin-right: 30px;
 }
-.case-det .col-lg-5 img {
-  /* width: 95%; */
-  /* height: 95%; */
+.case-det .swiper-btn-styl {
+  bottom: -43%;
 }
-.case-det .col-lg-7 img {
-  /* width: 95%; */
-  /* height: 95%; */
+.case-det .swiper-btn-styl {
+  opacity: 0;
 }
-.case-det .col-lg-7 {
-  /* width: 100%; */
-  /* flex: 0 0 auto; */
+.case-det .two {
+  right: 6rem;
 }
+.case-det .one {
+  right: 10rem;
+}
+.case-det:hover .swiper-btn-styl {
+  opacity: 1;
+}
+/* End  */
+
+/* <!-- Case Details  --> */
+.case-det-card {
+  margin-top: 2rem;
+}
+.case-det-card .row {
+  background: rgb(247, 250, 255);
+  padding: 4.5rem;
+  border-radius: 14px;
+}
+.case-det-card .col-lg-12 {
+  width: 100%;
+  background: #fff;
+  padding: 3rem;
+  border-radius: 14px;
+}
+.horiz-line {
+  width: 40px;
+  height: 4px;
+  background: rgb(236, 241, 250);
+  margin: 18px auto;
+}
+.case-cad h4 {
+  color: var(--text-color-primary);
+  font-weight: 700;
+}
+/* End  */
+
+/* <!-- Case Discri first --> */
+.case-disc-fir {
+  margin-top: 5rem;
+}
+.case-soci-icon {
+  float: right;
+}
+.case-soci-icon .faceb a,
+.case-soci-icon .twitt a,
+.case-soci-icon .skkpe a {
+  border: none;
+  fill: var(--text-color-primary);
+  width: 40px;
+  height: 40px;
+  background: rgb(247, 250, 255);
+  border-radius: 50%;
+  border: 1px solid rgb(231 233 237);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 8px;
+}
+.case-soci-icon .faceb a:hover,
+.case-soci-icon .twitt a:hover,
+.case-soci-icon .skkpe a:hover {
+  fill: var(--text-color-secondary);
+}
+/* End  */
+
+/* <!-- Case Discri second --> */
+.case-disc-seco .col-lg-4 {
+  padding-right: 3.5rem;
+  position: relative;
+  height: 100%;
+}
+.case-disc-seco .col-lg-4 .content {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.case-disc-seco .col-lg-4 .content p:nth-child(1) {
+  font-size: 30px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.5;
+}
+.case-disc-seco .col-lg-4 .content p:nth-child(2) span {
+  color: var(--text-color-secondary);
+  margin-top: 2rem;
+  margin-bottom: 1.5em;
+  display: inline-block;
+}
+.case-disc-seco .col-lg-8 {
+  padding-top: 2rem;
+}
+/* End  */
+
+/* <!-- Case Discri Four --> */
+.case-disc-for .container .row .col-lg-4:nth-child(2) p {
+  font-family: var(--secondary-font);
+}
+.case-disc-for .container .row .col-lg-4:nth-child(2) p strong {
+  font-family: var(--secondary-font);
+  color: var(--text-color-primary);
+}
+.case-disc-for .container .row .col-lg-4:nth-child(2) p span {
+  color: var(--text-color-secondary);
+}
+/* End  */
+
+/* <!-- Case Comment  --> */
+.case-comm .row {
+  background: rgb(247, 250, 255);
+  padding: 4rem;
+  border-radius: 14px;
+}
+.case-comm .col-lg-6 {
+  width: 49%;
+}
+.comme-form {
+  width: 100%;
+  margin-top: 4rem;
+}
+.form-control-lg,
+textarea[rows="3"] {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  padding: 0 1.5rem 0 1.5rem;
+  margin-bottom: 1rem;
+}
+.form-control-lg::placeholder,
+textarea[rows="3"]::placeholder {
+}
+textarea[rows="3"] {
+  height: 170px;
+  padding-top: 14px;
+  resize: none;
+}
+
+.form-control-lg {
+  height: 60px;
+}
+.case-comm .dott::after,
+.case-comm .dott::before {
+  background: #dadada;
+  top: 20px;
+}
+/* End  */
