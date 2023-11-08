@@ -399,6 +399,8 @@ textarea[rows="3"] {
 .header-bottom ul li {
   /* padding: 0 24px; */
   padding-right: 50px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 .header-bottom ul li a {
   font-weight: 700;
@@ -419,7 +421,37 @@ textarea[rows="3"] {
 .header-bottom .header-bott-btn .rbtn:active a {
   color: var(--primary-blue);
 }
-
+/* Blog li hover sub menu  */
+#blog {
+  position: relative;
+}
+.blog-desk-hov-sub-menu {
+  position: absolute;
+  top: 35px;
+  width: 215px;
+  padding: 30px;
+  transition: all 0.5s;
+  left: 0;
+  display: none;
+  background: #fff;
+}
+#blog:hover .blog-desk-hov-sub-menu {
+  display: block;
+  z-index: 55;
+}
+.blog-desk-hov-sub-menu ul li {
+  padding-right: 0;
+  padding: 12px 0;
+}
+.blog-desk-hov-sub-menu ul li:first-child {
+  padding-top: 0;
+}
+.blog-desk-hov-sub-menu ul li:last-child {
+  padding-bottom: 0;
+}
+.blog-desk-hov-sub-menu ul li a {
+  font-weight: 400;
+}
 /* Click top  */
 .clik-top {
   position: fixed;

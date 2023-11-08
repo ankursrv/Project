@@ -190,6 +190,9 @@
     padding-top: 0;
     padding-right: 0;
   }
+  .blog-mb-submenu-hid-tebl {
+    display: none;
+  }
   .mb-menu {
     display: flex;
   }
