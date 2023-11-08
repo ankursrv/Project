@@ -116,12 +116,27 @@ var swiper = new Swiper(".servi-slid", {
   },
 });
 
+// Case Detils Slider
+var swiper = new Swiper("#case-slider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: false,
+  speed: 1000,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-unique",
+    prevEl: ".swiper-button-prev-unique",
+  },
+});
+
 // Service Progress Bar
-// Counter To Count Number Visit
 var a = 0;
 $(window).scroll(function () {
   var oTop = $(".skill-conatainer").offset().top - window.innerHeight;
-  // Md.Asaduzzaman Muhid
   if (a == 0 && $(window).scrollTop() >= oTop) {
     $(".progress-bar").each(function () {
       var percent = $(this).attr("aria-valuenow");
@@ -132,6 +147,6 @@ $(window).scroll(function () {
         width: percent + "%",
       });
     });
-    a = 1; // Md.Asaduzzaman Muhid
+    a = 1;
   }
 });

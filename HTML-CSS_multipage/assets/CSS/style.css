@@ -1742,8 +1742,8 @@ input:focus {
   font-weight: 600;
 }
 .bredcum h6 {
-  font-size: 17px;
-  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 600;
 }
 /* End  */
 
@@ -1876,3 +1876,21 @@ input:focus {
   margin: 20px 25px 0 0px;
 }
 /* End  */
+
+.case-det .col-lg-5 {
+  /* width: 30%; */
+  /* flex: 0 0 auto; */
+  margin-right: 30px;
+}
+.case-det .col-lg-5 img {
+  /* width: 95%; */
+  /* height: 95%; */
+}
+.case-det .col-lg-7 img {
+  /* width: 95%; */
+  /* height: 95%; */
+}
+.case-det .col-lg-7 {
+  /* width: 100%; */
+  /* flex: 0 0 auto; */
+}
