@@ -4,28 +4,6 @@
   }
 }
 @media only screen and (max-width: 1320px) {
-  .mt-0 {
-    margin-top: 0;
-  }
-  .mb-0 {
-    margin-bottom: 0;
-  }
-  .my-0 {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .mb-5 {
-    margin-bottom: 5rem;
-  }
-  .mt-5 {
-    margin-top: 5rem;
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
-  .opacity-1 {
-    opacity: 1;
-  }
 }
 
 @media only screen and (max-width: 1120px) {
@@ -63,11 +41,6 @@
   .hero-banner .right .right-img .r-img-3 {
     top: 18.5rem;
   }
-  /* .hero-banner .shape1,
-  .hero-banner .shape2 {
-    width: inherit;
-    height: 745px;
-  } */
   .hero-banner {
     margin-bottom: 22rem;
   }
@@ -100,10 +73,11 @@
   .w-lg-100 {
     width: 100% !important;
   }
+  .d-lglg-block {
+    display: block;
+  }
   .header-bottom .menu {
     display: flex;
-    /* flex: 1 1 500px; */
-    /* background: red; */
     justify-content: end;
   }
   .offer-card-inner {
@@ -145,10 +119,14 @@
 }
 
 @media only screen and (max-width: 992px) {
-  .hero-banner .right .right-img .r-img-1,
-  .hero-banner .right .right-img .r-img-2,
-  .hero-banner .right .right-img .r-img-3 {
-    display: none;
+  .d-lg-none {
+    display: none !important;
+  }
+  .d-lg-block {
+    display: block;
+  }
+  .d-lg-flex {
+    display: flex;
   }
   .hero-banner .left,
   .hero-banner .right {
@@ -157,9 +135,6 @@
   .hero-banner .left form {
     width: 500px;
     max-width: 100%;
-  }
-  .header-top-right {
-    display: none;
   }
   .header-top-title {
     padding: 1.5rem 0;
@@ -190,12 +165,6 @@
     padding-top: 0;
     padding-right: 0;
   }
-  .blog-mb-submenu-hid-tebl {
-    display: none;
-  }
-  .mb-menu {
-    display: flex;
-  }
   #plus-icon,
   #subt-icon,
   #plus--icon,
@@ -213,17 +182,6 @@
     position: relative;
     display: block;
   }
-  .mb-menu-wrap-soc-ico {
-    display: block;
-  }
-  .hero-banner .left .l-img-2,
-  .hero-banner .left .l-img-3,
-  .hero-banner .left .l-img-1 {
-    display: none;
-  }
-  .r-img-mobile {
-    display: block;
-  }
   .hero-banner {
     margin-bottom: 10rem;
   }
@@ -236,9 +194,6 @@
   .brand .card-body:hover .box-2 {
     transform: translateY(-6rem);
   }
-  .woking-process .container .row:nth-child(2) {
-    flex-wrap: wrap;
-  }
   .woking-process .one,
   .woking-process .two,
   .woking-process .three,
@@ -249,9 +204,6 @@
   .woking-process .one,
   .woking-process .three {
     margin-top: 0;
-  }
-  .shape-rotate {
-    display: none;
   }
   .working-card {
     width: 145px;
@@ -276,11 +228,6 @@
   }
   .amaz-team-member .col-lg-3 {
     width: 50%;
-  }
-  .amaz-img-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .amaz-team-member:has(.col-lg-3) {
     margin-top: 2rem;
@@ -317,19 +264,15 @@
   .happ-customer .top img {
     width: 100%;
   }
-  .footer-mid {
+  /* .footer-mid {
     flex-wrap: wrap;
-  }
+  } */
   .footer-mid .col-lg-23 {
     border: none;
   }
   .footer-mid .col-lg-30 {
     width: 50%;
   }
-  /* .footer-mid .col-lg-23:nth-child(3) .ft_soci_link {
-    justify-content: start;
-    padding-left: 3rem;
-  } */
   .footer-mid .col-lg-23 {
     width: 50%;
   }
@@ -372,10 +315,7 @@
   h4 {
     font-size: 1.2rem;
   }
-  .brand-dis h4 {
-    /* font-size: calc(2.2vw + 1vmin); */
-    /* line-height: 2; */
-  }
+
   .section {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -398,12 +338,7 @@
   .happ-customer .top .top-inner .testi-content p:nth-child(1) {
     font-size: 1rem;
   }
-  .happ-customer .back .back-img,
-  .happ-customer .back .back-img:nth-child(2),
-  .happ-customer .back .back-img:nth-child(3),
-  .happ-customer .back .back-img:nth-child(4),
-  .happ-customer .back .back-img:nth-child(5),
-  .happ-customer .back .back-img:nth-child(6) {
+  .d-md-none {
     display: none;
   }
   .happy-cus-slid {
@@ -433,6 +368,9 @@
   .mt-sm-2 {
     margin-top: 2rem;
   }
+  .mt-sm-3 {
+    margin-top: 3rem;
+  }
   .header-bottom .menu > ul {
     width: 100%;
   }
@@ -457,9 +395,6 @@
   .brand .container {
     padding: 3rem 1rem;
   }
-  /* .offer-card-innerr .col-lg-7 {
-    padding-right: 2rem;
-  } */
   .offer-card-innerr .offer-img-2 {
     transform: translate(2px, 133px);
   }

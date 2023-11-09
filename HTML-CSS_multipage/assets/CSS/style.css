@@ -95,6 +95,32 @@ li {
 .flex-dir-column {
   flex-direction: column;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Margin  */
+.mt-0 {
+  margin-top: 0;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.mb-5 {
+  margin-bottom: 5rem;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+
+/* Opacity  */
+.opacity-1 {
+  opacity: 1;
+}
 
 /** Headings  **/
 h1 {
@@ -216,9 +242,8 @@ button {
   font-weight: 400;
   font-family: var(--secondary-font);
 }
-/* Margin  */
 
-/** Heading bottom after-&-before dot  **/
+/** HomePage Heading bottom after-&-before dot  **/
 .dot::after,
 .dott::after,
 .dott::before,
@@ -238,12 +263,13 @@ button {
   right: 38%;
 }
 
+/* Form Input / Text Areaa */
 input:focus,
 textarea[rows="3"] {
   outline: none;
 }
 
-/* Image background color  */
+/* HomePage Image background color  */
 .small-img-bgcolor {
   width: 65px;
   height: 65px;
@@ -296,7 +322,7 @@ textarea[rows="3"] {
   margin: 0 30px 0 18px;
 }
 .header-top-left .contact:hover a {
-  background: -webkit-linear-gradient(
+  /* background: -webkit-linear-gradient(
     linear,
     left top,
     right top,
@@ -305,7 +331,7 @@ textarea[rows="3"] {
   );
   background: linear-gradient(to right, #fc7318 0%, #feb423 100%);
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 .header-top-left .lang .bg-img {
   background: url(assets/img/arrow-down-white.webp);
@@ -827,7 +853,6 @@ textarea[rows="3"] {
 .offer-card-innerr .col-lg-7 {
   width: 100%;
 }
-/* .offer-card-innerr .col-lg-7 .card p,.text-style-1{line-height: 1.8; opacity: 0.8; margin: 1.5rem 0; font-size: 15px;} */
 .offer-card-innerr .offer-card-btn {
   background: transparent;
   background-origin: border-box;
@@ -1173,10 +1198,6 @@ textarea[rows="3"] {
 .amazing__team .amaz-title {
   padding-top: 18rem;
 }
-/* 
- .small--img--bgcolor {
-  background: #2843b2;
-} */
 
 .amaz-team-member {
   padding-bottom: 18rem;
@@ -1270,8 +1291,6 @@ textarea[rows="3"] {
 
 /*********** FAQ  *************/
 .faq .bg-2 {
-  /* width: 81%;
-  height: 700px; */
   max-height: 100%;
 }
 .acc-main {
@@ -1286,7 +1305,6 @@ textarea[rows="3"] {
   font-weight: 700;
   position: relative;
   padding: 1.5rem 2.5rem;
-  /* margin-bottom: 0.5em; */
   display: block;
   cursor: pointer;
   font-size: 1.125rem;
@@ -1390,13 +1408,11 @@ textarea[rows="3"] {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  /* width: 100%; */
 }
 .happ-customer .top .top-inner {
   position: relative;
   top: 0;
   left: 50%;
-  /* width: 700px; */
   transform: translateX(-50%);
   text-align: center;
 }
@@ -1422,8 +1438,6 @@ textarea[rows="3"] {
 }
 .happ-customer .top .top-inner .testi-content {
   margin-top: 5rem;
-  /* margin-left: 1.1rem;
-  margin-right: 1.1rem; */
 }
 .happ-customer .top .top-inner .testi-content p:nth-child(1) {
   line-height: 2;
@@ -1436,7 +1450,6 @@ textarea[rows="3"] {
   margin-bottom: 1rem;
 }
 .zoom-in-out-box {
-  /* display: block; */
   animation: zoom-in-zoom-out 4s ease infinite;
 }
 .happy-cus-slid {
