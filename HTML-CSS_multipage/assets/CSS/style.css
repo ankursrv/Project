@@ -453,13 +453,15 @@ textarea[rows="3"] {
 }
 .blog-desk-hov-sub-menu {
   position: absolute;
-  top: 35px;
+  top: 45px;
   width: 215px;
   padding: 30px;
   transition: all 0.5s;
   left: 0;
   display: none;
   background: #fff;
+  border-bottom: 4px solid var(--text-color-primary);
+  box-shadow: 0px 3px 11.16px 0.84px rgba(0, 0, 0, 0.1);
 }
 #blog:hover .blog-desk-hov-sub-menu {
   display: block;
