@@ -29,7 +29,7 @@
   <div class="header-top">
     <div class="container">
       <div class="row justify-content-space-between">
-        <div class="header-top-right">
+        <div class="header-top-right d-lg-none">
           <ul class="d-flex align-items-center">
             <li class="faceb">
               <a href="#">
@@ -99,7 +99,7 @@
           </a>
         </div>
         <input type="checkbox" id="mbmenu">
-        <label for="mbmenu" class="mb-menu" id="icon">
+        <label for="mbmenu" class="mb-menu d-lg-flex" id="icon">
           <svg class="mm-icon" id="mbMenuOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path fill="" d="M3 8h18a1 1 0 0 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/>
           </svg>
@@ -109,8 +109,8 @@
         </label>
         <div class="menu">
           <ul class="d-flex">
-            <li class="mb-srch-box">
-              <form action="" class="news-form      position-relative">
+            <li class="mb-srch-box mt-sm-3">
+              <form action="" class="news-form position-relative">
                 <input type="text" class="sbuscribe mbinput-box" placeholder="Enter your search key ... ">
                 <button class="btn-sty-1 subs-btn">Search
                 </button>
@@ -119,7 +119,7 @@
             <div class="mb--menu-wrap d-flex">
               <li><a href="#">Home</a></li>
               <li><a href="service.html">Services</a></li>
-              <li><a href="#">Case Studies</a></li>
+              <li><a href="casedetail.html">Case Studies</a></li>
               <li id="blog">
                 <a href="#">Blog</a>
                 <input type="checkbox" id="subBlog">
@@ -146,6 +146,26 @@
                       <a href="#">blog grid 3 column</a>
                     </li>
                   </ul>
+                </div>
+                <!-- Desktop blog li hover sub menu  -->
+                <div class="blog-mb-submenu-hid-tebl d-lg-none">
+
+                <div class="blog-desk-hov-sub-menu">
+                        <ul>
+                        <li>
+                          <a href="#">blog details</a>
+                        </li>
+                        <li>
+                          <a href="blogdetais">blog grid 3 column</a>
+                        </li>
+                        <li>
+                          <a href="#">blog grid 3 column</a>
+                        </li>
+                        <li>
+                          <a href="#">blog grid 3 column</a>
+                        </li>
+                      </ul>
+                </div>
                 </div>
               </li>
               <li id="pages">
@@ -177,7 +197,7 @@
                 </div>
               </li>
               <li><a href="#">Contacts</a></li>
-              <div class="mb-menu-wrap-soc-ico">
+              <div class="mb-menu-wrap-soc-ico d-lg-block">
                 <ul class="d-flex align-items-center">
                   <li class="faceb">
                     <a href="#">
