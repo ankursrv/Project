@@ -15,7 +15,7 @@
 body {
   font-family: var(--secondar-font);
 }
-/* Custom CSS  */
+/** Custom CSS  **/
 .line-height {
   line-height: 28.8px;
 }
