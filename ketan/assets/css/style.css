@@ -24,7 +24,7 @@ body {
   font-size: 16px;
 }
 .section {
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 /* Border  */
 .border-none {
@@ -597,7 +597,7 @@ header {
 
 /* Teacher Start  */
 .teacher {
-  background: url("/assets/images/teacher-bg.jpg");
+  background: url("../images/teacher-bg.jpg");
   background-size: cover;
   background-position: center;
   padding: 6rem 0;
@@ -638,6 +638,21 @@ header {
   z-index: 11;
   transition: all 0.3s;
   opacity: 0;
+}
+.social-icon a {
+  background: var(--background-color-primary);
+  color: #fff;
+  margin: 0 4px;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.5s;
+}
+.social-icon a:hover {
+  background: var(--hover-bgcolor);
 }
 .teach-item-box:hover .social-icon {
   opacity: 1;
@@ -759,11 +774,12 @@ header {
 
 /* Events Start  */
 .events {
-  background: url("/assets/images/event-bg.jpg");
+  background: url(../images/event-bg.jpg) rgb(0 0 0 / 35%);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   padding: 6rem 0;
+  background-blend-mode: multiply;
 }
 .events .main-title strong,
 .events .main-title h2 {
