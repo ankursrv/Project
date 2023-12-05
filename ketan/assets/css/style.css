@@ -26,6 +26,10 @@ body {
 .section {
   padding-top: 2rem;
 }
+/* Text Color  */
+.text-white {
+  color: #fff;
+}
 /* Border  */
 .border-none {
   border: none;
@@ -639,7 +643,8 @@ header {
   transition: all 0.3s;
   opacity: 0;
 }
-.social-icon a {
+.social-icon a,
+.social-icon-ft a {
   background: var(--background-color-primary);
   color: #fff;
   margin: 0 4px;
@@ -860,4 +865,46 @@ header {
 }
 .blog-admin a {
   color: #283d5e;
+}
+/* Footer Start  */
+#footer-main {
+  background: url(../images/footer-bg.jpg) rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 6rem 0;
+}
+.footer-top {
+  color: #fff;
+}
+.ft-left p {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 28px;
+}
+.social-icon-ft a:nth-child(1) {
+  margin-left: 0;
+}
+.gallry-box {
+  width: 300px;
+}
+.gallry-box img {
+  width: 97px;
+}
+.line {
+  width: 60px;
+  background: var(--background-color-primary);
+  height: 2px;
+  display: block;
+  margin-top: 12px;
+}
+.fa-phone {
+  transform: rotate(90deg);
+}
+.ft-ico {
+  color: var(--font-color-third);
 }
