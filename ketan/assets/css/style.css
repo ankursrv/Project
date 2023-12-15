@@ -885,11 +885,17 @@ header {
   padding-top: 20px;
   padding-bottom: 28px;
 }
+/*Footer social icon*/
 .social-icon-ft {
   gap: 8px;
+  transition: ease-in-out 0.5s;
 }
 .social-icon-ft a:nth-child(1) {
   margin-left: 0;
+}
+.social-icon-ft a:hover {
+  margin-top: -8px;
+  background: var(--hover-bgcolor);
 }
 .ft-item {
   display: flex;
